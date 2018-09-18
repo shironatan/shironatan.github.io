@@ -1,6 +1,6 @@
 body{
     padding: 20px;
-    border: #d06d8c dashed 2px;
+    /*border: #ff6055 double 4px;*/
     text-align: center;
     background-color:white;
     
@@ -76,13 +76,13 @@ border-style: solid;
 
 
 h2{
-    color: #dd6a7a;
+    color: #884b4b;
     padding: 5px 5px 5px 30px;
     position: relative;
     text-align: left;
 }
 h2:before{
-    background-color: #996633;
+    background-color: #884b4b;
     border-radius: 5px;
     content: '';
     position: absolute;
@@ -92,7 +92,7 @@ h2:before{
     height: 100%;
 }
 h2:after{
-    background-color: #be9c5b;
+    background-color: #fd6e6e;
     border-radius: 5px;
     content: '';
     position: absolute;
@@ -104,7 +104,7 @@ h2:after{
 @media(max-width:969px){
 img {
     left: 0px
-    max-width : 100% ;
+    max-width: 100% ;
     height : auto ;
     float:none;
     } 
