@@ -1,12 +1,13 @@
 body{
-    background-color:#fff;
+    background-color:#5d618f;
 }
 .section a,a:hover:visited:link:visited {
     color:#5d618f;
     font-weight: bolder;
 }
 .section{
-    border:solid 2px #5d618f;
+    background-color:#fff;
+    border:solid 2px #ca9199;
     padding-left: 20px;
     padding-right:20px;
     padding-bottom:20px;
@@ -37,7 +38,7 @@ body{
     position: absolute;
     background: #c7acb0;
     color:#a0767c;
-    top: 40%;
+    top: 0%;
     width: 0px;
     height: 0px;
     background: transparent;
@@ -48,27 +49,27 @@ body{
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    z-index: -1;
-    transform: rotate(45deg);
+
+    transform: rotate(55deg);
 }
 .section h2:after {
     content: "　*";
     position: absolute;
     background: #ca9199;
     color:#a0767c;
-    top: 1%;
+    top: -26%;
     width: 0px;
     height: 0px;
     background: transparent;
     border-bottom: 30px solid #ca9199;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
-    left: 17px;
+    left: 20px;
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    z-index: -1;
-    transform: rotate(100deg);
+
+    transform: rotate(120deg);
 }
 
 @media(max-width:969px){
@@ -83,13 +84,13 @@ body{
         padding-left: initial;
     }
     .section h2:before {
-        top: 40%;
+        top: 0%;
         left: -3px;
         transform: rotate(55deg);
     }
     .section h2:after {
-        top: 16%;
-        left: 25px;
-        transform: rotate(115deg);
+        top: -26%;
+        left: 30px;
+        transform: rotate(120deg);
     }
 }
