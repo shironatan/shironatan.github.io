@@ -1,13 +1,15 @@
 body{
-    background-color:#5d618f;
+    background-color:#6c2735;
+    padding-left:10%;
+    padding-right:10%;
 }
 .section a,a:hover:visited:link:visited {
-    color:#5d618f;
+    color:#6c2735;
     font-weight: bolder;
 }
 .section{
     background-color:#fff;
-    border:solid 2px #ca9199;
+    border:solid 6px #4e4848;
     padding-left: 20px;
     padding-right:20px;
     padding-bottom:20px;
@@ -18,10 +20,11 @@ body{
     color:#4e4848;
 }
 .section u{
-    color:#5d618f;
+    color:#6c2735;
     font-weight: bolder;
     text-decoration: none;
 }
+
 .section h2:first-letter {
     margin-right: .1em;
     font-size: 1.5em;
@@ -36,13 +39,13 @@ body{
 .section h2:before {
     content: "　*";
     position: absolute;
-    background: #c7acb0;
-    color:#a0767c;
+    background: #6c2735;
+    color:#6c2735;
     top: 0%;
     width: 0px;
     height: 0px;
     background: transparent;
-    border-bottom: 30px solid #ca9199;
+    border-bottom: 30px solid #6c2735;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     left: -10px;
@@ -55,13 +58,13 @@ body{
 .section h2:after {
     content: "　*";
     position: absolute;
-    background: #ca9199;
-    color:#a0767c;
+    background: #6c2735;
+    color:#6c2735;
     top: -26%;
     width: 0px;
     height: 0px;
     background: transparent;
-    border-bottom: 30px solid #ca9199;
+    border-bottom: 30px solid #6c2735;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     left: 20px;
@@ -73,6 +76,10 @@ body{
 }
 
 @media(max-width:969px){
+    body{
+        padding-left:initial;
+        padding-right:initial;
+    }
     .section{
         border-right:initial;
         border-left: initial;
