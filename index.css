@@ -1,9 +1,7 @@
 body{
-    background-color:#192152;
+    background-color:#232a53;
     padding-left:10%;
     padding-right:10%;
-    padding-top:5%;
-    padding-bottom:5%;
 }
 .section a,a:hover:visited:link:visited {
     color:#192152;
@@ -81,12 +79,14 @@ body{
     body{
         padding-left:initial;
         padding-right:initial;
+        padding-top:5%;
+        padding-bottom:5%;
     }
     .section{
         border:initial;
-        padding-left: initial;
-        padding-right:initial;
-        padding-bottom:initial;
+        padding-left: 1%;
+        padding-right:1%;
+        padding-bottom:2%;
     }
     .section p{
         padding-left: initial;
