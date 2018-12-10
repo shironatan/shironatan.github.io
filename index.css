@@ -40,7 +40,7 @@ body{
     content: "　*";
     position: absolute;
     background: #6c2735;
-    color:#6c2735;
+    color:#000000;
     top: 0%;
     width: 0px;
     height: 0px;
@@ -59,7 +59,7 @@ body{
     content: "　*";
     position: absolute;
     background: #6c2735;
-    color:#6c2735;
+    color:#000000;
     top: -26%;
     width: 0px;
     height: 0px;
