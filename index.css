@@ -1,5 +1,5 @@
 body{
-    background-color:#6c2735;
+    background-color:#192152;
     padding-left:10%;
     padding-right:10%;
 }
@@ -28,7 +28,7 @@ body{
 .section h2:first-letter {
     margin-right: .1em;
     font-size: 1.5em;
-    color:#696969;
+    color:#192152;
 }
 .section h2 {
     position: relative;
@@ -40,7 +40,7 @@ body{
     content: "　*";
     position: absolute;
     background: #6c2735;
-    color:#000000;
+    color:#192152;
     top: 0%;
     width: 0px;
     height: 0px;
@@ -59,7 +59,7 @@ body{
     content: "　*";
     position: absolute;
     background: #6c2735;
-    color:#000000;
+    color:#192152;
     top: -26%;
     width: 0px;
     height: 0px;
