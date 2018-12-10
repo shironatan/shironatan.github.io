@@ -4,12 +4,12 @@ body{
     padding-right:10%;
 }
 .section a,a:hover:visited:link:visited {
-    color:#6c2735;
+    color:#192152;
     font-weight: bolder;
 }
 .section{
     background-color:#fff;
-    border:solid 6px #4e4848;
+    border:solid 7px #6c2735;
     padding-left: 20px;
     padding-right:20px;
     padding-bottom:20px;
@@ -20,7 +20,7 @@ body{
     color:#4e4848;
 }
 .section u{
-    color:#6c2735;
+    color:#192152;
     font-weight: bolder;
     text-decoration: none;
 }
