@@ -49,7 +49,7 @@ body{
 }
 .section h2:before {
     z-index: -1;
-    content: "　　。";
+    content: "";
     position: absolute;
     color:#f19ca7;
     top: 30%;
