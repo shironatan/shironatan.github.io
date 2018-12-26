@@ -4,53 +4,71 @@
     <meta charset="UTF-8">
     <title>echo $ABOUT_467</title>
     <meta name="viewport" content="width=device-width">
-</head>
+    <script>
+        function show(inputData){
+            var objID=document.getElementById( "layer_" + inputData );
+            var buttonID=document.getElementById( "category_" + inputData );
+            if(objID.className=='close') {
+                objID.style.display='block';
+                objID.className='open';
+            }else{
+                objID.style.display='none';
+                objID.className='close';
+            }
+        }
+    </script>
+    <head>
 <body>
-    <div class="section">
-    <h2>Me</h2>
+    <div class="head">
+    <img src="face.jpg" align="left"/>
     <p>
-        情報を専攻にしている学生。多趣味ですがアニメとコンピュータが一番好きです。
-        すきなことだけをしていきたい。<br>白菜||しろな||467||shimoyama
+        情報を専攻にしている学生。<br>多趣味ですがアニメとコンピュータが一番好きです。<br>白菜||しろな||467||shimoyama
+        <br>すきなことだけをしていきたい。
     </p>
+    <br clear="left">
     </div>
-    <br>
     <div class="section">
-    <h2>Like</h2>
-    <p><u>COMPUTER</u><br>Java,ShellScript,Ubuntu,SQL,DB,NWなどいろいろすき。</p>
-    <p><u>ANIME</u><br>なんでもみます。かわいい女の子がでるアニメとかすきです。</p>
-    <p><u>ENGLAND</u><br>Cotswoldsで暖炉つけながらプログラミングしたい。</p>
-    <p><u>ETC</u><br>旅行/りぶさん(りぶクラやってました)</p>
+        <h2><a href="javascript:void(0)" id="category_折りたたみA" onclick="show('折りたたみ1');" >Like</a></h2>
+        <div id="layer_折りたたみ1" class="close">
+            <p><u>COMPUTER</u><br>Java,ShellScript,Ubuntu,SQL,DB,NWなどいろいろすき。</p>
+            <p><u>ANIME</u><br>なんでもみます。かわいい女の子がでるアニメとかすきです。</p>
+            <p><u>ENGLAND</u><br>Cotswoldsで暖炉つけながらプログラミングしたい。</p>
+            <p><u>ETC</u><br>旅行/りぶさん(りぶクラやってました)</p>
+        </div>
     </div>
-    <br>
     <div class="section">
-    <h2>Active</h2>
-    <p><u>2015</u><br>基本情報技術者試験</p>
-    <p><u>2016</u><br>応用情報技術者試験</p>
-    <p><u>2017</u><br>情報処理安全確保支援士</p>
-    <p><u>2018</u><br>データベーススペシャリスト試験<br>セキュリティキャンプ全国大会<br>CODEBULUE学スタ<br>ネットワークスペシャリスト試験</p>
-    <p>など</p>
+        <h2><a href="javascript:void(0)" id="category_折りたたみA" onclick="show('折りたたみ2');">Active</a></h2>
+        <div id="layer_折りたたみ2" class="close">
+            <p><u>2015</u><br>基本情報技術者試験</p>
+            <p><u>2016</u><br>応用情報技術者試験</p>
+            <p><u>2017</u><br>情報処理安全確保支援士</p>
+            <p><u>2018</u><br>データベーススペシャリスト試験<br>セキュリティキャンプ全国大会<br>CODEBULUE学スタ<br>ネットワークスペシャリスト試験</p>
+            <p>など</p>
+        </div>
     </div>
-    <br>
     <div class="section">
-    <h2>LinkList</h2>
-    <p><a href="http://467.hatenablog.com/">BLOG</a><br>いろいろ書いてます。</p>
-    <p><a href="https://twitter.com/srn221B">TWITTER</a><br>いろいろつぶやいてます。※趣味のことばかり</p>
-    <p><a href="http://animetick.net/users/srn221B">ANIMECHECK</a><br>いろいろみています。</p>
-    <p><a href="https://filmarks.com/users/467">FILMARKS</a><br>いろいろみています。</p>
-    <p><a href="https://github.com/shironatan">GITHUB</a><br>作ったものあげてます。</p>
-    <p><a href="https://www.amazon.co.jp/gp/registry/wishlist/1E8677O7SULY9/ref=cm_wl_list_o_1?">WISH_LIST</a><br>ほしいものリスト。</p>
+        <h2><a href="javascript:void(0)" id="category_折りたたみA" onclick="show('折りたたみ3');">LinkList</h2>
+            <div id="layer_折りたたみ3" class="close">
+                <p><a href="http://467.hatenablog.com/">BLOG</a><br>いろいろ書いてます。</p>
+               <p><a href="https://twitter.com/srn221B">TWITTER</a><br>いろいろつぶやいてます。※趣味のことばかり</p>
+                <p><a href="http://animetick.net/users/srn221B">ANIMETICK</a><br>いろいろみています。</p>
+                <p><a href="https://filmarks.com/users/467">FILMARKS</a><br>いろいろみています。</p>
+                <p><a href="https://github.com/shironatan">GITHUB</a><br>作ったものあげてます。</p>
+                <p><a href="https://www.amazon.co.jp/gp/registry/wishlist/1E8677O7SULY9/ref=cm_wl_list_o_1?">WISH_LIST</a><br>ほしいものリスト。</p>
+            </div>
     </div>
-    <br>
     <div class="section">
-        <h2>Index</h2>
-        <p><a href="https://shironatan.github.io/advent.html">Advent Calender 2018</a><br>ブログをたくさんかきました．</p>
+            <h2><a href="javascript:void(0)" id="category_折りたたみA" onclick="show('折りたたみ4');">Index</h2>
+            <div id="layer_折りたたみ4" class="close">
+                <p><a href="https://shironatan.github.io/advent.html">Advent Calender 2018</a><br>ブログをたくさんかきました．</p>
+            </div>
     </div>
-    <br>
     <div class="section">
-    <h2>Contact</h2>
-    <p>Twitter　@srn221B</p>
+            <h2><a href="javascript:void(0)" id="category_折りたたみA" onclick="show('折りたたみ5');">Contact</h2>
+            <div id="layer_折りたたみ5" class="close">
+                    <p>Twitter　@srn221B</p>
+            </div>
     </div>
-    <br>
 
 </body>
 </html>
