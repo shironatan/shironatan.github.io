@@ -108,7 +108,7 @@ img{
         padding-right:initial;
     }
     .section h2:after{
-        content: "　。";
+        content: "　。*";
     }
 
 }
