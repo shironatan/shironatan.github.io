@@ -56,7 +56,7 @@ body{
     width: 0px;
     height: 0px;
     background: transparent;
-    border-bottom: 25px solid #c43862;
+    border-bottom: 25px solid #902342;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     left: -10px;
@@ -74,7 +74,7 @@ body{
     width: 0px;
     height: 0px;
     background: transparent;
-    border-bottom: 25px solid #c43862;
+    border-bottom: 25px solid #902342;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     left: 20px;
@@ -99,11 +99,13 @@ img{
         border-left:initial;
         border-right:initial;
     }
-    .section h2:after{
-        content: "　*";
-    }
+
     .section p{
         padding-left: initial;
+    }
+    .section{
+        padding-left: initial;
+        padding-right:initial;
     }
 
 }
