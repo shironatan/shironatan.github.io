@@ -17,7 +17,7 @@ body{
     text-decoration: none;
 }
 .head{
-    border:solid 5px #192152;
+    border:solid 5px #f19ca7;
     padding:1%;
 }
 .section a,a:hover:visited:link:visited {
@@ -38,7 +38,6 @@ body{
 .section h2:first-letter {
     margin-right: .1em;
     font-size: 1.5em;
-    color:#192152;
 }
 .section h2 {
     z-index: 3;
