@@ -49,14 +49,14 @@ body{
 }
 .section h2:before {
     z-index: -1;
-    content: "";
+    content: "　　。";
     position: absolute;
-    color:#902342;
+    color:#f19ca7;
     top: 30%;
     width: 0px;
     height: 0px;
     background: transparent;
-    border-bottom: 25px solid #902342;
+    border-bottom: 25px solid #f19ca7;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     left: -10px;
@@ -69,12 +69,12 @@ body{
     z-index: -2;
     content: "　*　*";
     position: absolute;
-    color:#902342;
+    color:#f19ca7;
     top: 30%;
     width: 0px;
     height: 0px;
     background: transparent;
-    border-bottom: 25px solid #902342;
+    border-bottom: 25px solid #f19ca7;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     left: 20px;
@@ -106,6 +106,9 @@ img{
     .section{
         padding-left: initial;
         padding-right:initial;
+    }
+    .section h2:after{
+        content: "　。";
     }
 
 }
