@@ -50,7 +50,7 @@ body{
     z-index: -1;
     content: "";
     position: absolute;
-    color:#f19ca7;
+    color:#192152;
     top: 30%;
     width: 0px;
     height: 0px;
@@ -68,7 +68,7 @@ body{
     z-index: -2;
     content: "　*　*";
     position: absolute;
-    color:#f19ca7;
+    color:#192152;
     top: 30%;
     width: 0px;
     height: 0px;
