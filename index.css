@@ -2,6 +2,7 @@ body{
     background-color:#fff;
     padding-left:10%;
     padding-right:10%;
+    color:#4e4848;
 }
 .section{
     background-color:#fff;
@@ -17,7 +18,7 @@ body{
     text-decoration: none;
 }
 .head{
-    border:solid 5px #192152;
+    border:double 5px #192152;
     padding:1%;
 }
 .section a,a:hover:visited:link:visited {
