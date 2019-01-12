@@ -32,7 +32,7 @@ h4{
     font-weight: 300;
 }
 h1, h4 {
-  color: #d7847e;
+  color: #a5d1f4;
 }
 .row {
   width: 100%;
@@ -54,25 +54,25 @@ h1, h4 {
   width: 10%;
 }
 .cta {
-  background-color: #d7847e;
+  background-color: #a5d1f4;
   color: white; 
   transition: .2s ease;
 }
 .cta:hover{
-    background-color: darken(#d7847e, 5%);
-    color: #d7847e;
-    border: 1px solid #d7847e;
+    background-color: darken(#a5d1f4, 5%);
+    color: #a5d1f4;
+    border: 1px solid #a5d1f4;
     transition: .2s ease;
 }
 
 .ghost {
   background-color: transparent;
-  color: #d7847e;
-  border: 1px solid #d7847e; 
+  color: #a5d1f4;
+  border: 1px solid #a5d1f4;
   transition: .2s ease;
 }
 .ghost:hover{
-    background-color: #d7847e;
+    background-color: #a5d1f4;
     color: white;
     transition: .2s ease;
 }
@@ -87,31 +87,33 @@ h1, h4 {
 .open{
     padding-left:30%;
     text-align: left;
-    color: #d7847e;
+    color: #a5d1f4;
     transition: .5s ease;
     font-weight: 300;
 }
 .open h2{
-    color: #d7847e;
+    color: #a5d1f4;
 }
 #icon{
     padding-left:10px;
-    color: #d7847e;
+    color: #a5d1f4;
 }
 #icon:hover{
     transform: rotate(20deg);
     transition: .5s ease;
 }
 .open a,a:hover:visited:link:visited {
-    color:#d7847e;
+    color:#a5d1f4;
     font-weight: bolder;
     text-decoration: none;
 }
+hr{
+    height: 1px;
+    background-color: #f5b2ac;
+    border: none;
+}
 
 @media (max-width: 800px){
-    body{
-        background-repeat: initial;
-    }
   .sm {
     width: 100%
   }
