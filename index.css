@@ -5,7 +5,10 @@ body {
   font-family: 'Roboto', 'Helvetica', 'Arial', 'Sans Serif';
   max-width: 100%;
   overflow-x: hidden;
-  background: url(background.JPG) no-repeat center center fixed;
+  background-image: url(background.JPG);
+  background-position:center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
    -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -106,6 +109,9 @@ h1, h4 {
 }
 
 @media (max-width: 800px){
+    body{
+        background-repeat: initial;
+    }
   .sm {
     width: 100%
   }
