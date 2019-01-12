@@ -25,15 +25,15 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 h1{
-    padding-left:30%;
-    text-align: left;
+  color:#f5b2ac;
+  padding-left:30%;
+  text-align: left;
 }
 h4{
     font-weight: 300;
+    color: #a5d1f4;
 }
-h1, h4 {
-  color: #a5d1f4;
-}
+
 .row {
   width: 100%;
   position: relative;
@@ -92,7 +92,7 @@ h1, h4 {
     font-weight: 300;
 }
 .open h2{
-    color: #a5d1f4;
+  color:#f5b2ac;
 }
 #icon{
     padding-left:10px;
