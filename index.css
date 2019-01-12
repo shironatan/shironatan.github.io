@@ -1,114 +1,122 @@
-body{
-    background-color:#fff;
-    padding-left:10%;
-    padding-right:10%;
-    color:#4e4848;
+* {
+  box-sizing: border-box;
 }
-.section{
-    background-color:#fff;
-    padding-left: 20px;
-    padding-right:20px;
+body {
+  font-family: 'Roboto', 'Helvetica', 'Arial', 'Sans Serif';
+  max-width: 100%;
+  overflow-x: hidden;
+  background: url(background.jpg) no-repeat center center fixed;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.background {
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  width: 100%;
+  border-radius: 2px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+h1{
+    padding-left:30%;
+    text-align: left;
+}
+h4{
+    font-weight: 300;
+}
+h1, h4 {
+  color: #d7847e;
+}
+.row {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  border-radius: 2px;
+  border: none;
+  height: 45px;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.sm {
+  width: 10%;
+}
+.cta {
+  background-color: #d7847e;
+  color: white; 
+  transition: .2s ease;
+}
+.cta:hover{
+    background-color: darken(#d7847e, 5%);
+    color: #d7847e;
+    border: 1px solid #d7847e;
+    transition: .2s ease;
+}
+
+.ghost {
+  background-color: transparent;
+  color: #d7847e;
+  border: 1px solid #d7847e; 
+  transition: .2s ease;
+}
+.ghost:hover{
+    background-color: #d7847e;
+    color: white;
+    transition: .2s ease;
 }
 #category_折りたたみA {
     text-decoration: none;
-    color:#4e4848;
 }
 .close{
     display: none;
     text-decoration: none;
+    transition: .5s ease;
 }
-.head{
-    border:double 5px #192152;
-    padding:1%;
+.open{
+    padding-left:30%;
+    text-align: left;
+    color: #d7847e;
+    transition: .5s ease;
+    font-weight: 300;
 }
-.section a,a:hover:visited:link:visited {
-    color:#192152;
+.open h2{
+    color: #d7847e;
+}
+#icon{
+    padding-left:10px;
+    color: #d7847e;
+}
+#icon:hover{
+    transform: rotate(20deg);
+    transition: .5s ease;
+}
+.open a,a:hover:visited:link:visited {
+    color:#d7847e;
     font-weight: bolder;
     text-decoration: none;
 }
-.section p{
-    padding-left: 20px;
-    text-align:left;
-    color:#4e4848;
-}
-.section u{
-    color:#192152;
-    font-weight: bolder;
-    text-decoration: none;
-}
-.section h2:first-letter {
-    margin-right: .1em;
-    font-size: 1.5em;
-}
-.section h2 {
-    z-index: 3;
-    position: relative;
-    color: #333333;
-    line-height: 1.4;
-    padding:0.25em 1em;
-}
-.section h2:before {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    color:#192152;
-    top: 30%;
-    width: 0px;
-    height: 0px;
-    background: transparent;
-    border-bottom: 25px solid #f19ca7;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    left: -10px;
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: rotate(330deg);
-}
-.section h2:after {
-    z-index: -2;
-    content: "　*　*";
-    position: absolute;
-    color:#192152;
-    top: 30%;
-    width: 0px;
-    height: 0px;
-    background: transparent;
-    border-bottom: 25px solid #f19ca7;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    left: 20px;
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: rotate(30deg);
-}
-img{
-    padding:1%;
-}
 
-@media(max-width:969px){
-    body{
-        padding-left:initial;
-        padding-right:initial;
-        padding-top:5%;
-        padding-bottom:5%;
-    }
-    .head{
-        border-top:initial;
-        border-left:initial;
-        border-right:initial;
-    }
-
-    .section p{
-        padding-left: initial;
-    }
-    .section{
-        padding-left: initial;
-        padding-right:initial;
-    }
-    .section h2:after{
-        content: "　。*";
-    }
-
+@media (max-width: 800px){
+  .sm {
+    width: 100%
+  }
+  .row {
+    text-align: initial;
+  }
+  h1, h4 {
+    padding-left: 0%;
+    text-align: left;
+  }
+  .open{
+    padding-left:initial;
+  }
 }
