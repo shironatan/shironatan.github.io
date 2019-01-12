@@ -28,17 +28,16 @@ h1{
   color:#f5b2ac;
   padding-left:30%;
   text-align: left;
+  font-weight: 300;
 }
 h4{
     font-weight: 300;
     color: #a5d1f4;
 }
-
 .row {
   width: 100%;
   position: relative;
   display: inline-block;
-  margin: 10px;
   text-align: center;
 }
 .btn {
@@ -80,9 +79,9 @@ h4{
     text-decoration: none;
 }
 .close{
-    display: none;
-    text-decoration: none;
-    transition: .5s ease;
+  transition: .5s ease;
+  display: none;
+  text-decoration: none;
 }
 .open{
     padding-left:30%;
@@ -99,8 +98,9 @@ h4{
     color: #a5d1f4;
 }
 #icon:hover{
-    transform: rotate(20deg);
-    transition: .5s ease;
+  transform: rotate(20deg);
+  transition: .5s ease;
+  color: #f5b2ac;
 }
 .open a,a:hover:visited:link:visited {
     color:#a5d1f4;
@@ -114,6 +114,9 @@ hr{
 }
 
 @media (max-width: 800px){
+  .row{
+    margin: initial;
+  }
   .sm {
     width: 100%
   }
@@ -121,7 +124,7 @@ hr{
     text-align: initial;
   }
   h1, h4 {
-    padding-left: 0%;
+    padding-left: initial;
     text-align: left;
   }
   .open{
