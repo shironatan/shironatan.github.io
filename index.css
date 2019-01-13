@@ -25,14 +25,19 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
 }
 h1{
-  color:#f5b2ac;
+  font-family: 'Verdana';
+  letter-spacing : 0.42em;
   padding-left:30%;
   text-align: left;
-  font-weight: 300;
+  text-shadow: 
+  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
+  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
+  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
+  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
 }
 h4{
     font-weight: 300;
-    color: #a5d1f4;
+    color: white;
 }
 .row {
   width: 100%;
@@ -53,25 +58,26 @@ h4{
   width: 10%;
 }
 .cta {
-  background-color: #a5d1f4;
+  background-color: white;
   color: white; 
   transition: .2s ease;
 }
 .cta:hover{
-    background-color: darken(#a5d1f4, 5%);
-    color: #a5d1f4;
-    border: 1px solid #a5d1f4;
+    background-color: darken(white, 5%);
+    color: white;
+    border: 1px solid white;
     transition: .2s ease;
 }
 
 .ghost {
   background-color: transparent;
-  color: #a5d1f4;
-  border: 1px solid #a5d1f4;
+  color: white;
+  border: 1px solid white;
   transition: .2s ease;
 }
 .ghost:hover{
-    background-color: #a5d1f4;
+    background-color: #f5b2ac;
+    border: 1px solid #f5b2ac;
     color: white;
     transition: .2s ease;
 }
@@ -86,24 +92,29 @@ h4{
 .open{
     padding-left:30%;
     text-align: left;
-    color: #a5d1f4;
+    color: white;
     transition: .5s ease;
     font-weight: 300;
 }
 .open h2{
-  color:#f5b2ac;
+  color: initial;
+  text-shadow: 
+  1px 1px white, -1px -1px white, 
+  1px -1px white, -1px 1px white, 
+  0px 1px white, 1px 0px white, 
+  -1px 0px white, 0px -1px white;
 }
 #icon{
     padding-left:10px;
-    color: #a5d1f4;
+    color: #f5b2ac;
 }
 #icon:hover{
   transform: rotate(20deg);
   transition: .5s ease;
-  color: #f5b2ac;
+  color: white;
 }
 .open a,a:hover:visited:link:visited {
-    color:#a5d1f4;
+    color:#f5b2ac;
     font-weight: bolder;
     text-decoration: none;
 }
