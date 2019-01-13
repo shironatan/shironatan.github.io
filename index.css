@@ -70,12 +70,19 @@ h4{
 }
 
 .ghost {
+  font-family: 'Verdana';
+  letter-spacing : 0.42em;
+  text-shadow: 
+  1px 1px white, -1px -1px white, 
+  1px -1px white, -1px 1px white, 
+  0px 1px white, 1px 0px white, 
+  -1px 0px white, 0px -1px white;
   background-color: transparent;
-  color: white;
   border: 1px solid white;
   transition: .2s ease;
 }
 .ghost:hover{
+  text-shadow:initial;
     background-color: #f5b2ac;
     border: 1px solid #f5b2ac;
     color: white;
