@@ -1,8 +1,48 @@
 * {
   box-sizing: border-box;
 }
+@font-face {
+    font-family: 'LigatureSymbols';
+    src: url('fonts/LigatureSymbols-2.11.eot');
+    src: url('fonts/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
+         url('fonts/LigatureSymbols-2.11.woff') format('woff'),
+         url('fonts/LigatureSymbols-2.11.ttf') format('truetype'),
+         url('fonts/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
+    src: url('fonts/LigatureSymbols-2.11.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.lsf, .lsf-icon:before {
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga" 1, "dlig" 1;
+  -o-font-feature-settings: "liga" 1, "dlig" 1;
+  font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+.lsf-icon:before {
+content:attr(title);
+margin-right:0.3em;
+font-size:130%;
+}
+.lsf-icon.hatena:before{
+  content:'\E161';
+}
+
+
 body {
-  font-family: 'Roboto', 'Helvetica', 'Arial', 'Sans Serif';
+  font-family: 'Century Gothic';
   max-width: 100%;
   overflow-x: hidden;
   background-image: url(background.JPG);
@@ -103,33 +143,36 @@ h4{
     transition: .5s ease;
     font-weight: 300;
 }
-.open h2{
-  color: initial;
-  text-shadow: 
-  1px 1px white, -1px -1px white, 
-  1px -1px white, -1px 1px white, 
-  0px 1px white, 1px 0px white, 
-  -1px 0px white, 0px -1px white;
-}
+
 #icon{
     padding-left:10px;
-    color: #f5b2ac;
+    color:#f5b2ac;
 }
 #icon:hover{
-  transform: rotate(20deg);
-  transition: .5s ease;
-  color: white;
+  text-decoration: none;
+  color:#f5b2ac;
 }
 .open a,a:hover:visited:link:visited {
-    color:#f5b2ac;
-    font-weight: bolder;
-    text-decoration: none;
+  color: #f5b2ac;
+  text-decoration: none;
 }
+#sns_icon{
+  text-decoration: none;
+  padding-left:10px;
+  font-size:30px;
+  color:#f5b2ac;
+}
+#sns_icon:hover{
+  text-decoration: none;
+  color:#f5b2ac;
+}
+
 hr{
     height: 1px;
     background-color: #f5b2ac;
     border: none;
 }
+
 
 @media (max-width: 800px){
   .row{
