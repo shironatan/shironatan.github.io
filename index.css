@@ -45,8 +45,8 @@ html,body {
     z-index: 2;
 }
 /* design*/
-#content01_bg {background-image: url(background2.jpg); }
-#content02_bg {background-image: url(background.jpg);}
+#content01_bg {background-image: url(image2.jpg);}
+#content02_bg {background-image: url(image1.jpg);}
 #content01 .wrap { background-color: rgba(68, 68, 68, 0.6);}
 #content02 .wrap2 { background-color: rgba(68, 68, 68, 0.6);}
 .text-box {
