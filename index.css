@@ -45,8 +45,8 @@ html,body {
     z-index: 2;
 }
 /* design*/
-#content01_bg {background-image: url(image2.jpg);}
-#content02_bg {background-image: url(image1.jpg);}
+#content01_bg {background-image: url(image1.jpg);}
+#content02_bg {background-image: url(image2.jpg);}
 #content01 .wrap { background-color: rgba(68, 68, 68, 0.6);}
 #content02 .wrap2 { background-color: rgba(68, 68, 68, 0.6);}
 .text-box {
@@ -151,11 +151,9 @@ h4{
   transition: .2s ease;
 }
 .ghost:hover{
-  text-shadow:initial;
   background:repeating-linear-gradient(-45deg, transparent, transparent 2px, #504946 2px,
   #504946 4px);
     border: 1px solid white;
-    color: white;
     transition: .2s ease;
 }
 /**/
@@ -192,8 +190,11 @@ a{
   #f5b2ac 4px);
 }
 .top{
+  padding-top:1%;
+  padding-bottom:1%;
+  font-size:130%;
   text-align: center;
-  color:white;
+  color:#f5b2ac;
   background:repeating-linear-gradient(-45deg, transparent, transparent 2px, #504946 2px,
   #504946 4px);
 }
@@ -267,10 +268,19 @@ content:'\E161';
 
 
 @media (max-width: 800px){
+  .contents .wrap2 {
+    padding:initial;
+    padding-right:2%;
+    padding-left:2%;
+  }
   .text-box {
     padding:initial;
     padding-left:1px;
     padding-right:1px;
+  }
+  .text-box2 {
+    font-weight:400;
+    padding-bottom:5%;
   }
   .sm {
     width: 100%
