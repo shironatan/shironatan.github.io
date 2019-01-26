@@ -267,20 +267,26 @@ content:'\E161';
 
 
 @media (max-width: 800px){
-  .row{
-    margin: initial;
+  .text-box {
+    padding:initial;
+    padding-left:1px;
+    padding-right:1px;
   }
   .sm {
     width: 100%
   }
-  .row {
-    text-align: initial;
-  }
-  h1, h4 {
-    padding-left: initial;
-    text-align: left;
-  }
-  .open{
+  .left{
     padding-left:initial;
+    padding-right:initial;
+    border:initial;
+    width:initial;
+    float:initial;
+  }
+  .right{
+    padding-left:initial;
+    padding-right:initial;
+    border:initial;
+    margin-top:1%;
+    margin-left:initial;
   }
 }
