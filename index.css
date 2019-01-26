@@ -1,90 +1,120 @@
 * {
   box-sizing: border-box;
 }
-@font-face {
-    font-family: 'LigatureSymbols';
-    src: url('fonts/LigatureSymbols-2.11.eot');
-    src: url('fonts/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
-         url('fonts/LigatureSymbols-2.11.woff') format('woff'),
-         url('fonts/LigatureSymbols-2.11.ttf') format('truetype'),
-         url('fonts/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
-    src: url('fonts/LigatureSymbols-2.11.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+html,body {
+  margin: 0;
+  padding: 0;
+	font-family: 'Verdana';
+	max-width: 100%;
+	max-height:100%;
+	font-family: 'Century Gothic';
 }
-.lsf, .lsf-icon:before {
-  font-family: 'LigatureSymbols';
-  -webkit-text-rendering: optimizeLegibility;
-  -moz-text-rendering: optimizeLegibility;
-  -ms-text-rendering: optimizeLegibility;
-  -o-text-rendering: optimizeLegibility;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -ms-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  -webkit-font-feature-settings: "liga" 1, "dlig" 1;
-  -moz-font-feature-settings: "liga=1, dlig=1";
-  -ms-font-feature-settings: "liga" 1, "dlig" 1;
-  -o-font-feature-settings: "liga" 1, "dlig" 1;
-  font-feature-settings: "liga" 1, "dlig" 1;
-}
-
-.lsf-icon:before {
-content:attr(title);
-margin-right:0.3em;
-font-size:130%;
-}
-.lsf-icon.hatena:before{
-  content:'\E161';
-}
-
-
-body {
-  font-family: 'Century Gothic';
-  max-width: 100%;
-  overflow-x: hidden;
-  background-image: url(background.JPG);
-  background-position:center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-   -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+/* init */
 .background {
-  position: fixed;
+	width:100%;
   top: 0;
-  left:0;
-  right:0;
-  width: 100%;
-  border-radius: 2px;
+  left: 0;
+  right: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  background-position: center center;
+  opacity: 0;
+	-webkit-background-size: cover;
+	background-size: cover;
+	-webkit-transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.show .background {
+    opacity: 1;
+}
+.contents .wrap {
+  height:100%;
+  padding-top:5%;
+  padding-bottom:5%;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.contents .wrap2 {
+  padding-top:5%;
+  padding-bottom:5%;
+  padding-right:2%;
+  padding-left:2%;
+    position: relative;
+    z-index: 2;
+}
+/* design*/
+#content01_bg {background-image: url(background2.jpg); }
+#content02_bg {background-image: url(background.jpg);}
+#content01 .wrap { background-color: rgba(68, 68, 68, 0.6);}
+#content02 .wrap2 { background-color: rgba(68, 68, 68, 0.6);}
+.text-box {
+  text-align: left;
+	font-weight:400;
+  padding-left: 10%;
+  color:white;
+}
+.text-box2 {
+	font-weight:400;
+  color:white;
 }
 h1{
-  font-family: 'Verdana';
-  letter-spacing : 0.42em;
-  padding-left:30%;
-  text-align: left;
+  font-weight: 300;
+  font-size:350%;
+  color: #fff;
   text-shadow: 
   1px 1px #f5b2ac, -1px -1px #f5b2ac, 
   1px -1px #f5b2ac, -1px 1px #f5b2ac, 
   0px 1px #f5b2ac, 1px 0px #f5b2ac, 
   -1px 0px #f5b2ac, 0px -1px #f5b2ac;
+  border-bottom:3px solid rgba(70, 57, 57, 0.24);
+}
+.left{
+  padding:1%;
+  border-radius: 10px;
+  border:1px solid #f5b2ac;
+	width:48%;
+  float:left;
+}
+.right{
+  padding:1%;
+  border-radius: 10px;
+  border:1px solid #f5b2ac;
+	margin-left:50%;
+}
+h2:first-letter{
+  font-size:150%;
+  color: #504946;
+}
+h2{
+  padding-left: 1.2em;/*アイコン分のスペース*/
+  position:relative;
+  color: #504946;
+  text-shadow: 
+  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
+  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
+  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
+  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
+
+}
+h2:after{
+  text-shadow: 
+  1px 1px #fff, -1px -1px #fff, 
+  1px -1px #fff, -1px 1px #fff, 
+  0px 1px #fff, 1px 0px #fff, 
+  -1px 0px #fff, 0px -1px #fff;
+  content:"＊.";/* 文字前のワンポイント */
+  font-size:26px;/* ワンポイントの大きさ */
+  top: 15px;/* ワンポイントの位置 */
+  left:2px;/* ワンポイントの位置 */
+  position:absolute;
+  z-index: -1;
 }
 h4{
     font-weight: 300;
-    color: white;
 }
-.row {
-  width: 100%;
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
+/*btn*/
 .btn {
   display: inline-block;
   border-radius: 2px;
@@ -108,7 +138,6 @@ h4{
     border: 1px solid white;
     transition: .2s ease;
 }
-
 .ghost {
   font-family: 'Verdana';
   letter-spacing : 0.42em;
@@ -123,54 +152,117 @@ h4{
 }
 .ghost:hover{
   text-shadow:initial;
-    background-color: #f5b2ac;
-    border: 1px solid #f5b2ac;
+  background:repeating-linear-gradient(-45deg, transparent, transparent 2px, #504946 2px,
+  #504946 4px);
+    border: 1px solid white;
     color: white;
     transition: .2s ease;
 }
-#category_折りたたみA {
-    text-decoration: none;
-}
-.close{
-  transition: .5s ease;
-  display: none;
-  text-decoration: none;
-}
-.open{
-    padding-left:30%;
-    text-align: left;
-    color: white;
-    transition: .5s ease;
-    font-weight: 300;
-}
+/**/
 
+/*icon-list*/
+a{
+  text-decoration: none;
+  color:white;
+}
 #icon{
-    padding-left:10px;
-    color:#f5b2ac;
+  padding-right:2px;
+  color: #504946;
+  text-shadow: 
+  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
+  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
+  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
+  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
 }
 #icon:hover{
-  text-decoration: none;
-  color:#f5b2ac;
+  color: #504946;
 }
-.open a,a:hover:visited:link:visited {
-  color: #f5b2ac;
+.link{
+  font-size:initial;
+  color: initial;
+  text-shadow: initial;
   text-decoration: none;
+  color:white;
 }
+.link:hover{
+  text-decoration: none;
+  color:white;
+  transition: .2s ease;
+  background:repeating-linear-gradient(-45deg, transparent, transparent 2px, #f5b2ac 2px,
+  #f5b2ac 4px);
+}
+.top{
+  text-align: center;
+  color:white;
+  background:repeating-linear-gradient(-45deg, transparent, transparent 2px, #504946 2px,
+  #504946 4px);
+}
+
 #sns_icon{
   text-decoration: none;
-  padding-left:10px;
   font-size:30px;
-  color:#f5b2ac;
+  color: #504946;
+  text-shadow: 
+  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
+  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
+  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
+  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
 }
 #sns_icon:hover{
   text-decoration: none;
-  color:#f5b2ac;
+  color: #504946;
 }
-
+#like{
+  color: #504946;
+  text-shadow: 
+  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
+  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
+  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
+  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
+}
 hr{
     height: 1px;
     background-color: #f5b2ac;
     border: none;
+}
+
+/*font*/
+@font-face {
+  font-family: 'LigatureSymbols';
+  src: url('fonts/LigatureSymbols-2.11.eot');
+  src: url('fonts/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
+       url('fonts/LigatureSymbols-2.11.woff') format('woff'),
+       url('fonts/LigatureSymbols-2.11.ttf') format('truetype'),
+       url('fonts/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
+  src: url('fonts/LigatureSymbols-2.11.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.lsf, .lsf-icon:before {
+font-family: 'LigatureSymbols';
+-webkit-text-rendering: optimizeLegibility;
+-moz-text-rendering: optimizeLegibility;
+-ms-text-rendering: optimizeLegibility;
+-o-text-rendering: optimizeLegibility;
+text-rendering: optimizeLegibility;
+-webkit-font-smoothing: antialiased;
+-moz-font-smoothing: antialiased;
+-ms-font-smoothing: antialiased;
+-o-font-smoothing: antialiased;
+-webkit-font-feature-settings: "liga" 1, "dlig" 1;
+-moz-font-feature-settings: "liga=1, dlig=1";
+-ms-font-feature-settings: "liga" 1, "dlig" 1;
+-o-font-feature-settings: "liga" 1, "dlig" 1;
+font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+.lsf-icon:before {
+content:attr(title);
+margin-right:0.3em;
+font-size:130%;
+}
+.lsf-icon.hatena:before{
+content:'\E161';
 }
 
 
