@@ -44,11 +44,21 @@ html,body {
     position: relative;
     z-index: 2;
 }
+.contents .wrap3{
+  padding-top:5%;
+  padding-bottom:5%;
+  padding-right:15%;
+  padding-left:15%;
+  position: relative;
+  z-index: 2;
+}
 /* design*/
 #content01_bg {background-image: url(image1.jpg);}
 #content02_bg {background-image: url(image2.jpg);}
+#content03_bg{background-image:url(image3.jpg);}
 #content01 .wrap { background-color: rgba(68, 68, 68, 0.6);}
 #content02 .wrap2 { background-color: rgba(68, 68, 68, 0.6);}
+#content03 .wrap3 { background-color: rgba(68, 68, 68, 0.6);}
 .text-box {
   text-align: left;
 	font-weight:400;
@@ -56,6 +66,10 @@ html,body {
   color:white;
 }
 .text-box2 {
+	font-weight:400;
+  color:white;
+}
+.text-box3 {
 	font-weight:400;
   color:white;
 }
@@ -226,6 +240,20 @@ hr{
     background-color: #f5b2ac;
     border: none;
 }
+/*img*/
+.example{
+  position:relative;
+}
+.example p{
+  margin-right:3px;
+  padding:3px;
+  font-size:120%;
+  position: absolute;
+  color:white;
+  bottom:0;
+  right: 0;
+  background-color:rgba(68, 68, 68, 0.6);
+}
 
 /*font*/
 @font-face {
@@ -272,6 +300,10 @@ content:'\E161';
     padding:initial;
     padding-right:2%;
     padding-left:2%;
+  }
+  .contents .wrap3{
+    padding-left:initial;
+    padding-right:initial;
   }
   .text-box {
     padding:initial;
