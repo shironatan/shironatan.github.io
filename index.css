@@ -73,6 +73,7 @@ html,body {
 	font-weight:400;
   color:white;
 }
+/*content*/
 h1{
   font-weight: 300;
   font-size:350%;
@@ -82,7 +83,14 @@ h1{
   1px -1px #f5b2ac, -1px 1px #f5b2ac, 
   0px 1px #f5b2ac, 1px 0px #f5b2ac, 
   -1px 0px #f5b2ac, 0px -1px #f5b2ac;
-  border-bottom:3px solid rgba(70, 57, 57, 0.24);
+  border-bottom:3px solid rgba(70, 57, 57, 0.705);
+}
+.content1{
+  transition: .8s;
+  opacity: 0;
+}
+.fadein_content1{
+  opacity: 1.0;
 }
 .left{
   padding:1%;
@@ -95,7 +103,16 @@ h1{
   padding:1%;
   border-radius: 10px;
   border:1px solid #f5b2ac;
-	margin-left:50%;
+  margin-left:50%;
+}
+.content2{
+  transition: .8s;
+  transform: translate(0,40px); 
+	-webkit-transform: translate(0,40px); 
+}
+.fadein_content2{
+  transform: translate(0,0); 
+	-webkit-transform: translate(0,0);
 }
 h2:first-letter{
   font-size:150%;
@@ -243,6 +260,13 @@ hr{
 /*img*/
 .example{
   position:relative;
+  transition: .8s;
+  transform: scale(0, 0) rotateY(180deg);
+	-webkit-transform: scale(0, 0) rotateY(180deg);
+}
+.fadein_example{
+  transform: scale(1, 1) rotateY(360deg);
+	-webkit-transform: scale(1, 1) rotateY(360deg);
 }
 .example p{
   margin-right:3px;
@@ -330,5 +354,8 @@ content:'\E161';
     border:initial;
     margin-top:1%;
     margin-left:initial;
+  }
+  .example p{
+    font-size:initial;
   }
 }
