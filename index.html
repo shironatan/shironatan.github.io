@@ -81,9 +81,22 @@
 </head>
 <body>
     <section id="contents">
+        <div class="nav">
+            <input id="nav-input" type="checkbox" class="nav-unshown">
+            <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content">
+                <p><a href="https://shironatan.github.io/">TOPPAGE</a></p>
+                <p><a href="https://shironatan.github.io/travel/index.html">TRAVEL NOTE</a></p>
+                <p><a href="https://shironatan.github.io/anime/index.html">ANIME NOTE</a></p>
+                <p><a href="" style="color:#d7847e">CLOSE</a></p>
+            </div>
+        </div>
         <div id="content01" class="contents">
             <div id="content01_bg" class="background"></div>
             <div class="wrap" id="top">
+                <div id="nav-drawer">
+                    <label id="nav-open" for="nav-input"><span></span></label>
+                </div>
                 <div class="text-box" >
                     <div class="content1">
                         <h1>About me...</h1>
@@ -112,7 +125,6 @@
                 <div class="text-box content1" >
                     <a href="#like"><button class="btn sm ghost">LIKE</button></a>　
                     <a href="#active"><button class="btn sm ghost">ACTIVE</button></a>　
-                    <a href="#photo"><button class="btn sm ghost">PHOTO</button></a>
                 </div>
                 <hr/>
             </div>
@@ -146,6 +158,7 @@
                 </div>
             </div>
         </div>
+        <!--
         <div id="content03" class="contents">
             <div id="content03_bg" class="background"></div>
             <div class="wrap3">
@@ -224,6 +237,7 @@
                 </div>
             </div>
         </div>
+        -->
     </section>
 
 </body>
