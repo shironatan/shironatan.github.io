@@ -62,8 +62,10 @@ h1:after {
 }
 #contents{
   background-color:rgba(255, 255, 255, 0.329);
-  margin:1%; 
-  padding:1%;
+  margin:1%;
+  margin-top:3%;
+  margin-bottom:3%;
+  padding:3%;
 }
 #content_icon{
   background-color:#504946;
@@ -171,20 +173,25 @@ h2{
 
 
 @media (max-width: 800px){
+  .wrap{
+    padding-top:5%;
+    padding-bottom:5%;
+  }
   .t_left{
-    padding-left:initial;
-    padding-right:initial;
     border:initial;
     width:initial;
     float:initial;
+    padding-top:5%;
+    padding-bottom:5%;
   }
   .t_right{
-    padding-left:initial;
-    padding-right:initial;
     border:initial;
     margin-top:1%;
     margin-left:initial;
     margin-right:initial;
+  }
+  #logo{
+    border:initial;
   }
   #map{
     margin:initial;

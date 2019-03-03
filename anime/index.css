@@ -65,17 +65,25 @@ hr{
 
 
 @media (max-width: 800px){
+  .wrap{
+    padding-top:5%;
+    padding-bottom:5%;
+  }
   .t_left{
-    padding-left:initial;
-    padding-right:initial;
     border:initial;
     width:initial;
     float:initial;
+    padding-top:5%;
+    padding-bottom:5%;
   }
   .t_right{
+    border:initial;
     margin-top:1%;
     margin-left:initial;
     margin-right:initial;
+  }
+  #logo{
+    border:initial;
   }
   .top{
     margin:initial;
