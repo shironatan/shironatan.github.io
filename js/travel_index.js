@@ -84,4 +84,20 @@ $(function() {
             $(this).stop().removeClass('index_example');
         }
     });
+    $('.logo').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if(isInView){
+            $(this).stop().addClass('logo_show');
+        }
+        else{
+            $(this).stop().removeClass('logo_show');
+        }
+    });
+    $('.main').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if(isInView){
+            $(this).stop().addClass('main_show');
+        }
+        else{
+            $(this).stop().removeClass('main_show');
+        }
+    });
 });

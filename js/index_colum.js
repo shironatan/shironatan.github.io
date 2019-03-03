@@ -24,4 +24,12 @@ $(function() {
             $(this).stop().removeClass('fadein_example');
         }
     });
+    $('.logo').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+        if(isInView){
+            $(this).stop().addClass('logo_show');
+        }
+        else{
+            $(this).stop().removeClass('logo_show');
+        }
+    });
 });
