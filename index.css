@@ -400,6 +400,7 @@ content:'\E161';
 @media (max-width: 800px){
   .contents .wrap {
     height: initial;
+    padding-top:5%;
   }
   .contents .wrap2 {
     padding:initial;
@@ -412,8 +413,7 @@ content:'\E161';
   }
   .text-box {
     padding:initial;
-    padding-left:1px;
-    padding-right:1px;
+    padding:1%;
   }
   .text-box2 {
     font-weight:400;

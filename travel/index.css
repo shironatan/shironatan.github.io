@@ -63,9 +63,7 @@ h1:after {
 #contents{
   background-color:rgba(255, 255, 255, 0.329);
   margin:1%;
-  margin-top:3%;
-  margin-bottom:3%;
-  padding:3%;
+  padding:1%;
 }
 #content_icon{
   background-color:#504946;
@@ -182,7 +180,7 @@ h2{
     width:initial;
     float:initial;
     padding-top:5%;
-    padding-bottom:5%;
+    padding-bottom:10%;
   }
   .t_right{
     border:initial;
@@ -202,6 +200,7 @@ h2{
   .index_1, .index_2, .index_3{
     float: initial;
     width: initial;
+    transform: initial;
   }
   .top{
     margin:initial;
