@@ -17,12 +17,12 @@ hr{
 }
 .main{
   transition: .8s;
-  transform: scale(0, 0);
-	-webkit-transform: scale(0, 0);
+  transform: translate(0,40px); 
+	-webkit-transform: translate(0,40px); 
 }
 .main_show{
-  transform: scale(1, 1);
-	-webkit-transform: scale(1, 1);
+  transform: translate(0,0); 
+	-webkit-transform: translate(0,0);
 }
 .t_right a{
   text-decoration: none;
