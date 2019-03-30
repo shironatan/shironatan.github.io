@@ -36,7 +36,6 @@ h2:after{
   position:absolute;
   z-index: -1;
 }
-
 /*btn*/
 .btn {
     display: inline-block;
@@ -143,7 +142,6 @@ h2:after{
   transform: translate(0,0); 
 	-webkit-transform: translate(0,0);
 }  
-
 /*font*/
 @font-face {
     font-family: 'LigatureSymbols';
@@ -182,7 +180,6 @@ h2:after{
   .lsf-icon.hatena:before{
   content:'\E161';
   }
-
 /*icon*/
 #icon{
   padding-right:2px;
@@ -210,8 +207,6 @@ h2:after{
   background:repeating-linear-gradient(-45deg, transparent, transparent 2px, #f5b2ac 2px,
   #f5b2ac 4px);
 }
-
-
 #sns_icon{
   text-decoration: none;
   font-size:30px;
@@ -226,7 +221,6 @@ h2:after{
   text-decoration: none;
   color: #504946;
 }
-
 @media (max-width: 800px){
   .sm {
     width: 100%
