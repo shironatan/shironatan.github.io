@@ -1,0 +1,267 @@
+a{
+  text-decoration: none;
+  color:white;
+}
+hr{
+  height: 1px;
+  background-color: #f5b2ac;
+  border: none;
+}
+/*h2*/
+h2:first-letter{
+  font-size:150%;
+  color: #504946;
+}
+h2{
+  padding-left: 1.2em;/*アイコン分のスペース*/
+  position:relative;
+  color: #504946;
+  text-shadow: 
+  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
+  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
+  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
+  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
+
+}
+h2:after{
+  text-shadow: 
+  1px 1px #fff, -1px -1px #fff, 
+  1px -1px #fff, -1px 1px #fff, 
+  0px 1px #fff, 1px 0px #fff, 
+  -1px 0px #fff, 0px -1px #fff;
+  content:"＊.";/* 文字前のワンポイント */
+  font-size:26px;/* ワンポイントの大きさ */
+  top: 15px;/* ワンポイントの位置 */
+  left:2px;/* ワンポイントの位置 */
+  position:absolute;
+  z-index: -1;
+}
+
+/*btn*/
+.btn {
+    display: inline-block;
+    border-radius: 2px;
+    border: none;
+    height: 45px;
+    padding: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .sm {
+    width: 10%;
+  }
+  .cta {
+    background-color: white;
+    color: white; 
+    transition: .2s ease;
+  }
+  .cta:hover{
+      background-color: darken(white, 5%);
+      color: white;
+      border: 1px solid white;
+      transition: .2s ease;
+  }
+  .ghost {
+    font-family: 'Verdana';
+    letter-spacing : 0.42em;
+    text-shadow: 
+    1px 1px white, -1px -1px white, 
+    1px -1px white, -1px 1px white, 
+    0px 1px white, 1px 0px white, 
+    -1px 0px white, 0px -1px white;
+    background-color: transparent;
+    border: 1px solid white;
+    transition: .2s ease;
+  }
+  .ghost:hover{
+    background:repeating-linear-gradient(-45deg, transparent, transparent 2px, #504946 2px,
+    #504946 4px);
+      border: 1px solid white;
+      transition: .2s ease;
+  }
+/*content*/
+.content1 h1{
+  font-weight: 300;
+  font-size:350%;
+  color: #fff;
+  text-shadow: 
+  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
+  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
+  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
+  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
+  border-bottom:5px solid #504946;
+}
+.content1{
+  transition: .8s;
+  opacity: 0;
+}
+.fadein_content1{
+  opacity: 1.0;
+}
+.left{
+  padding:1%;
+  border-radius: 10px;
+  border:1px solid #504946;
+	width:48%;
+  float:left;
+}
+.right{
+  padding:1%;
+  border-radius: 10px;
+  border:1px solid #504946;
+  margin-left:50%;
+}
+.left p,.right p{
+  padding-left:3%;
+}
+.me{
+  margin:5%;
+  margin-top:5%;
+  margin-bottom:10%;
+}
+#left{
+	width:20%;
+  float:left;
+}
+#right{
+  margin-left:22%;
+}
+#right p{
+  padding-left:3%;;
+}
+#me_img{
+  border:solid 3px #f5b2ac;
+  filter: brightness(0.7);
+  max-width: 100%
+}
+.content2{
+  transition: .8s;
+  transform: translate(0,40px); 
+	-webkit-transform: translate(0,40px); 
+}
+.fadein_content2{
+  transform: translate(0,0); 
+	-webkit-transform: translate(0,0);
+}  
+
+/*font*/
+@font-face {
+    font-family: 'LigatureSymbols';
+    src: url('../fonts/LigatureSymbols-2.11.eot');
+    src: url('../fonts/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/LigatureSymbols-2.11.woff') format('woff'),
+         url('../fonts/LigatureSymbols-2.11.ttf') format('truetype'),
+         url('../fonts/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
+    src: url('../fonts/LigatureSymbols-2.11.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  .lsf, .lsf-icon:before {
+  font-family: 'LigatureSymbols';
+  -webkit-text-rendering: optimizeLegibility;
+  -moz-text-rendering: optimizeLegibility;
+  -ms-text-rendering: optimizeLegibility;
+  -o-text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga" 1, "dlig" 1;
+  -o-font-feature-settings: "liga" 1, "dlig" 1;
+  font-feature-settings: "liga" 1, "dlig" 1;
+  }
+  
+  .lsf-icon:before {
+  content:attr(title);
+  margin-right:0.3em;
+  font-size:130%;
+  }
+  .lsf-icon.hatena:before{
+  content:'\E161';
+  }
+
+/*icon*/
+#icon{
+  padding-right:2px;
+  color: #504946;
+  text-shadow: 
+  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
+  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
+  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
+  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
+}
+#icon:hover{
+  color: #504946;
+}
+.content1 .link{
+  font-size:initial;
+  color: initial;
+  text-shadow: initial;
+  text-decoration: none;
+  color:white;
+}
+.content1 .link:hover{
+  text-decoration: none;
+  color:white;
+  transition: .2s ease;
+  background:repeating-linear-gradient(-45deg, transparent, transparent 2px, #f5b2ac 2px,
+  #f5b2ac 4px);
+}
+
+
+#sns_icon{
+  text-decoration: none;
+  font-size:30px;
+  color: #504946;
+  text-shadow: 
+  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
+  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
+  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
+  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
+}
+#sns_icon:hover{
+  text-decoration: none;
+  color: #504946;
+}
+
+@media (max-width: 800px){
+  .sm {
+    width: 100%
+  }
+  .left{
+    padding-left:initial;
+    padding-right:initial;
+    border:initial;
+    width:initial;
+    float:initial;
+  }
+  .right{
+    padding-left:initial;
+    padding-right:initial;
+    border:initial;
+    margin-top:1%;
+    margin-left:initial;
+  }
+  .me{
+    margin-left:initial;
+    margin-right:initial;
+  }
+  #me_img{
+    text-align: center;
+  }
+  #left{
+    width:initial;
+    float:initial;
+    margin-left:initial;
+    margin-right:initial;
+  }
+  #right{
+    border:initial;
+    margin-top:1%;
+    margin-left:initial;
+    margin-right:initial;
+  }
+}
