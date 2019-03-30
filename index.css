@@ -36,20 +36,12 @@ html,body {
   text-align: center;
 }
 .contents .wrap2 {
-  padding-top:5%;
-  padding-bottom:5%;
+  padding-top:10%;
+  padding-bottom:10%;
   padding-right:2%;
   padding-left:2%;
     position: relative;
     z-index: 2;
-}
-.contents .wrap3{
-  padding-top:5%;
-  padding-bottom:5%;
-  padding-right:15%;
-  padding-left:15%;
-  position: relative;
-  z-index: 2;
 }
 /* design*/
 #content01_bg {background-image: url(image1.jpg);}
@@ -57,7 +49,6 @@ html,body {
 #content03_bg{background-image:url(image3.jpg);}
 #content01 .wrap { background-color: rgba(68, 68, 68, 0.6);}
 #content02 .wrap2 { background-color: rgba(68, 68, 68, 0.6);}
-#content03 .wrap3 { background-color: rgba(68, 68, 68, 0.6);}
 .text-box {
   text-align: left;
 	font-weight:400;
@@ -72,250 +63,7 @@ html,body {
 	font-weight:400;
   color:white;
 }
-/*content*/
-.content1 h1{
-  font-weight: 300;
-  font-size:350%;
-  color: #fff;
-  text-shadow: 
-  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
-  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
-  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
-  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
-  border-bottom:3px solid rgba(70, 57, 57, 0.705);
-}
-.content1{
-  transition: .8s;
-  opacity: 0;
-}
-.fadein_content1{
-  opacity: 1.0;
-}
-.left{
-  padding:1%;
-  border-radius: 10px;
-  border:1px solid #f5b2ac;
-	width:48%;
-  float:left;
-}
-.right{
-  padding:1%;
-  border-radius: 10px;
-  border:1px solid #f5b2ac;
-  margin-left:50%;
-}
-.content2{
-  transition: .8s;
-  transform: translate(0,40px); 
-	-webkit-transform: translate(0,40px); 
-}
-.fadein_content2{
-  transform: translate(0,0); 
-	-webkit-transform: translate(0,0);
-}
-.text-box2 h2:first-letter{
-  font-size:150%;
-  color: #504946;
-}
-.text-box2 h2{
-  padding-left: 1.2em;/*アイコン分のスペース*/
-  position:relative;
-  color: #504946;
-  text-shadow: 
-  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
-  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
-  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
-  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
 
-}
-.text-box2 h2:after{
-  text-shadow: 
-  1px 1px #fff, -1px -1px #fff, 
-  1px -1px #fff, -1px 1px #fff, 
-  0px 1px #fff, 1px 0px #fff, 
-  -1px 0px #fff, 0px -1px #fff;
-  content:"＊.";/* 文字前のワンポイント */
-  font-size:26px;/* ワンポイントの大きさ */
-  top: 15px;/* ワンポイントの位置 */
-  left:2px;/* ワンポイントの位置 */
-  position:absolute;
-  z-index: -1;
-}
-h4{
-    font-weight: 300;
-}
-/*btn*/
-.btn {
-  display: inline-block;
-  border-radius: 2px;
-  border: none;
-  height: 45px;
-  padding: 0;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-.sm {
-  width: 10%;
-}
-.cta {
-  background-color: white;
-  color: white; 
-  transition: .2s ease;
-}
-.cta:hover{
-    background-color: darken(white, 5%);
-    color: white;
-    border: 1px solid white;
-    transition: .2s ease;
-}
-.ghost {
-  font-family: 'Verdana';
-  letter-spacing : 0.42em;
-  text-shadow: 
-  1px 1px white, -1px -1px white, 
-  1px -1px white, -1px 1px white, 
-  0px 1px white, 1px 0px white, 
-  -1px 0px white, 0px -1px white;
-  background-color: transparent;
-  border: 1px solid white;
-  transition: .2s ease;
-}
-.ghost:hover{
-  background:repeating-linear-gradient(-45deg, transparent, transparent 2px, #504946 2px,
-  #504946 4px);
-    border: 1px solid white;
-    transition: .2s ease;
-}
-/**/
-
-/*icon-list*/
-a{
-  text-decoration: none;
-  color:white;
-}
-#icon{
-  padding-right:2px;
-  color: #504946;
-  text-shadow: 
-  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
-  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
-  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
-  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
-}
-#icon:hover{
-  color: #504946;
-}
-.content1 .link{
-  font-size:initial;
-  color: initial;
-  text-shadow: initial;
-  text-decoration: none;
-  color:white;
-}
-.content1 .link:hover{
-  text-decoration: none;
-  color:white;
-  transition: .2s ease;
-  background:repeating-linear-gradient(-45deg, transparent, transparent 2px, #f5b2ac 2px,
-  #f5b2ac 4px);
-}
-.top{
-  padding-top:1%;
-  padding-bottom:1%;
-  font-size:130%;
-  text-align: center;
-  color:#f5b2ac;
-  background:repeating-linear-gradient(-45deg, transparent, transparent 2px, #504946 2px,
-  #504946 4px);
-}
-
-#sns_icon{
-  text-decoration: none;
-  font-size:30px;
-  color: #504946;
-  text-shadow: 
-  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
-  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
-  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
-  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
-}
-#sns_icon:hover{
-  text-decoration: none;
-  color: #504946;
-}
-#like{
-  color: #504946;
-  text-shadow: 
-  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
-  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
-  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
-  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
-}
-hr{
-    height: 1px;
-    background-color: #f5b2ac;
-    border: none;
-}
-/*img*/
-.example{
-  position:relative;
-  transition: .8s;
-  transform: scale(0, 0) rotateY(180deg);
-	-webkit-transform: scale(0, 0) rotateY(180deg);
-}
-.fadein_example{
-  transform: scale(1, 1) rotateY(360deg);
-	-webkit-transform: scale(1, 1) rotateY(360deg);
-}
-.example p{
-  margin-right:3%;
-  padding:1%;
-  font-size:120%;
-  position: absolute;
-  color:white;
-  bottom:0;
-  right: 0;
-  background-color:rgba(68, 68, 68, 0.6);
-}
-
-/*font*/
-@font-face {
-  font-family: 'LigatureSymbols';
-  src: url('fonts/LigatureSymbols-2.11.eot');
-  src: url('fonts/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
-       url('fonts/LigatureSymbols-2.11.woff') format('woff'),
-       url('fonts/LigatureSymbols-2.11.ttf') format('truetype'),
-       url('fonts/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
-  src: url('fonts/LigatureSymbols-2.11.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-.lsf, .lsf-icon:before {
-font-family: 'LigatureSymbols';
--webkit-text-rendering: optimizeLegibility;
--moz-text-rendering: optimizeLegibility;
--ms-text-rendering: optimizeLegibility;
--o-text-rendering: optimizeLegibility;
-text-rendering: optimizeLegibility;
--webkit-font-smoothing: antialiased;
--moz-font-smoothing: antialiased;
--ms-font-smoothing: antialiased;
--o-font-smoothing: antialiased;
--webkit-font-feature-settings: "liga" 1, "dlig" 1;
--moz-font-feature-settings: "liga=1, dlig=1";
--ms-font-feature-settings: "liga" 1, "dlig" 1;
--o-font-feature-settings: "liga" 1, "dlig" 1;
-font-feature-settings: "liga" 1, "dlig" 1;
-}
-
-.lsf-icon:before {
-content:attr(title);
-margin-right:0.3em;
-font-size:130%;
-}
-.lsf-icon.hatena:before{
-content:'\E161';
-}
 
 /*nav*/
 #nav-drawer {
@@ -397,13 +145,38 @@ content:'\E161';
   box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
 
+
+/*icon-list*/
+#like{
+  color: #504946;
+  text-shadow: 
+  1px 1px #f5b2ac, -1px -1px #f5b2ac, 
+  1px -1px #f5b2ac, -1px 1px #f5b2ac, 
+  0px 1px #f5b2ac, 1px 0px #f5b2ac, 
+  -1px 0px #f5b2ac, 0px -1px #f5b2ac;
+}
+
+/*topbutton*/
+.top{
+  padding-top:1%;
+  padding-bottom:1%;
+  font-size:130%;
+  text-align: center;
+  color:#f5b2ac;
+  background:repeating-linear-gradient(-45deg, transparent, transparent 2px, #504946 2px,
+  #504946 4px);
+}
+.top a{
+  text-decoration: none;
+  color:white;
+}
+
 @media (max-width: 800px){
   .contents .wrap {
     height: initial;
     padding-top:5%;
   }
   .contents .wrap2 {
-    padding:initial;
     padding-right:2%;
     padding-left:2%;
   }
@@ -418,25 +191,5 @@ content:'\E161';
   .text-box2 {
     font-weight:400;
     padding-bottom:5%;
-  }
-  .sm {
-    width: 100%
-  }
-  .left{
-    padding-left:initial;
-    padding-right:initial;
-    border:initial;
-    width:initial;
-    float:initial;
-  }
-  .right{
-    padding-left:initial;
-    padding-right:initial;
-    border:initial;
-    margin-top:1%;
-    margin-left:initial;
-  }
-  .example p{
-    font-size:initial;
   }
 }

@@ -10,13 +10,10 @@
   -ms-touch-action: pan-y;
   touch-action: pan-y;
 }
-img{
-  width: 100%;
-  border: 5px solid rgba(68, 68, 68, 0.6);
-}
 .bx-wrapper img {
   max-width: 100%;
   display: block;
+  border: 5px solid rgba(68, 68, 68, 0.6);
 }
 .bxslider {
   margin: 0;
@@ -76,7 +73,7 @@ ul.bxslider {
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
   border:1px solid #f5b2ac;
-  background-color:#fff;
+  background-color:white;
 }
 .bx-wrapper .bx-pager-item,
 .bx-wrapper .bx-controls-auto .bx-controls-auto-item {

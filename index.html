@@ -1,9 +1,11 @@
 <html>
 <head>
+    <link rel="stylesheet" href="css/index_top.css">
     <link rel="stylesheet" href="index.css">
     <!-- jquery-->
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
     <script type="text/javascript" src="js/jquery.inview.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
     <!-- slider -->
     <script src="slider/jquery.bxslider.min.js"></script>
     <link href="slider/jquery.bxslider.css" rel="stylesheet" />
@@ -12,72 +14,6 @@
     <meta charset="UTF-8">
     <title>About me</title>
     <meta name="viewport" content="width=device-width">
-    <script>
-        $(function(){
-            $('.contents').each(function(i, elem){
-                var contentsPOS = $(elem).offset().top;
-                $(window).on('load scroll resize', function(){
-                    var winHeight = $(window).height();
-                    var scrollTop = $(window).scrollTop();
-                    var showClass = 'show';
-                    var timing = 100; // 100pxコンテンツが見えたら次のif文がtrue
-                    if (scrollTop >= contentsPOS - winHeight + timing){
-                        $(elem).addClass(showClass);
-                    } else {
-                        $(elem).removeClass(showClass);
-                    }
-                });
-            });
-        });
-        //scroll
-        $(function(){
-            $('a[href^=#]').click(function(){
-                var speed = 500;
-                var href= $(this).attr("href");
-                var target = $(href == "#" || href == "" ? 'html' : href);
-                var position = target.offset().top;
-                $("html, body").animate({scrollTop:position}, speed, "swing");
-                return false;
-            });
-        });
-        //slider
-        $(document).ready(function(){
-            $('.bxslider').bxSlider({
-                auto: true,
-            });
-        });
-        //fadein
-        $(function() {
-            $('.content1').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-                if(isInView){
-                    $(this).stop().addClass('fadein_content1');
-                }
-                else{
-                    $(this).stop().removeClass('fadein_content1');
-                }
-            });
-        });
-        $(function() {
-            $('.content2').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-                if(isInView){
-                    $(this).stop().addClass('fadein_content2');
-                }
-                else{
-                    $(this).stop().removeClass('fadein_content2');
-                }
-            });
-        });
-        $(function() {
-            $('.example').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-                if(isInView){
-                    $(this).stop().addClass('fadein_example');
-                }
-                else{
-                    $(this).stop().removeClass('fadein_example');
-                }
-            });
-        });
-    </script>
 </head>
 <body>
     <section id="contents">
@@ -99,13 +35,12 @@
                 </div>
                 <div class="text-box" >
                     <div class="content1">
-                        <h1>About me...</h1>
+                        <h1>portfolio site</h1>
                     </div>
                     <div class="content1">
-                        <h4>情報を専攻にしている学生.<br>多趣味ですがアニメとコンピュータが一番好きです.
-                            <br>shimoyama||白菜||しろな||467||のポートフォリオサイト </h4>
-                    </div>
-                    <div class="content1">
+                        <p>It's my portfolio site<i class="far fa-meh-rolling-eyes"></i>!<br>
+                        Contact me by 467tn.mi@gmail.com<i class="far fa-envelope"></i>!
+                        </p>
                         <p><a href="http://twitter.com/srn221B"><i class="fab fa-twitter fa-2x" id="icon"></i><span class="link"> twitter</span></a>
                             <a href="http://467.hatenablog.com/" class="lsf-icon hatena" id="sns_icon"><span class="link">hatena blog</span></a>
                             <a href="http://animetick.net/users/srn221B" ><i class="fas fa-check fa-2x" id="icon" style="padding-left:initial;"></i>
@@ -120,36 +55,63 @@
                         </p>
                     </div>
                 </div>
-                <br>
-                <hr />
+                <br><hr>
                 <div class="text-box content1" >
+                    <a href="#about"><button class="btn sm ghost">ABOUT</button></a>　
                     <a href="#like"><button class="btn sm ghost">LIKE</button></a>　
                     <a href="#active"><button class="btn sm ghost">ACTIVE</button></a>　
                 </div>
-                <hr/>
+                <hr>
+                <br>
             </div>
         </div>
         <div id="content02" class="contents">
             <div id="content02_bg" class="background"></div>
             <div class="wrap2">
                 <div class="text-box2">
+                    <div class="content1">
+                        <div class="me">
+                            <div id="left">
+                                <img src="face.jpg" id="me_img">
+                            <br>
+                            </div>
+                            <div id="right">
+                                <h2 id="about">About</h2>
+                                <p>情報を専攻にしている学生
+                                <br>多趣味ですがアニメとコンピュータが一番すき
+                                <br>高校生の頃はりぶクラやってたりもしてました
+                                </p>
+                                <p>しょうもないことしか呟きませんが、Twitterなど気軽にフォローしてくれると嬉しいです
+                                </p>
+                                <p>名前　Shimoyama　白菜　しろな　467
+                                <br>出身　静岡
+                                <br>#ムッシューかわいい
+                                </p>
+                                <div class="top">
+                                    <a href="#top">Back to top</a>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
                     <div class="left content2">
                     <h2 id="like">LIKE</h2>
-                    <p><i class="fas fa-desktop" id="like"></i> <u>COMPUTER</u><br>Java,Ubuntu,SQL,DB,NWなどいろいろすき。</p>
-                    <p><i class="fas fa-laugh-squint" id="like"></i> <u>ANIME</u><br>なんでもみます。</p>
-                    <p><i class="fab fa-font-awesome-flag" id="like"></i> <u>ENGLAND</u><br>Cotswoldsで暖炉つけながらプログラミングしたい。</p>
-                    <p><i class="fas fa-heart" id="like"></i> <u>ETC</u><br>旅行/りぶさん(りぶクラやってました)</p>
+                    <p><i class="fas fa-desktop" id="like"></i> <u>COMPUTER</u><br>Java,ShellScript,NW,DB,Webなど</p>
+                    <p><i class="fas fa-laugh-squint" id="like"></i> <u>ANIME</u><br>なんでもみます</p>
+                    <p><i class="fab fa-font-awesome-flag" id="like"></i> <u>ENGLAND</u><br>Cotswoldsで暖炉つけながらプログラミングしたい</p>
+                    <p><i class="fas fa-heart" id="like"></i> <u>ETC</u><br>旅行</p>
                     <div class="top">
                         <a href="#top">Back to top</a>
                     </div>
                     </div>
                     <div class="right content2">
                     <h2 id="active">ACTIVE</h2>
-                    <p><u>2015</u><br>基本情報技術者試験</p>
-                    <p><u>2016</u><br>応用情報技術者試験</p>
-                    <p><u>2017</u><br>情報処理安全確保支援士</p>
-                    <p><u>2018</u><br>データベーススペシャリスト試験<br>セキュリティキャンプ全国大会
-                        <br>CODEBLUE学スタ<br>ネットワークスペシャリスト試験</p>
+                    <p><u>2015</u><br>基本情報技術者試験合格</p>
+                    <p><u>2016</u><br>応用情報技術者試験合格</p>
+                    <p><u>2017</u><br>情報処理安全確保支援士試験合格</p>
+                    <p><u>2018</u><br>データベーススペシャリスト試験合格<br>セキュリティキャンプ全国大会参加
+                        <br>CODEBLUE学スタ参加<br>ネットワークスペシャリスト試験合格</p>
                     <p>など</p>
                     <div class="top">
                             <a href="#top">Back to top</a>
@@ -158,86 +120,6 @@
                 </div>
             </div>
         </div>
-        <!--
-        <div id="content03" class="contents">
-            <div id="content03_bg" class="background"></div>
-            <div class="wrap3">
-                <div class="text-box3">
-                    <hr/>
-                    <div class="content2">
-                        <h2 id="photo">PHOTO</h2>
-                        <p>My favorite photos...</p>
-                    </div>
-                    <ul class="bxslider">
-                        <li>
-                            <div class="example">
-                                <img src="image/slider1.jpg">
-                                <p>PLACE : Matsushima,Miyagi-ken</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="example">
-                                <img src="image/slider2.jpg">
-                                <p>PLACE : Beach Walk Shopping Center,Bali,Indonesia</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="example">
-                                <img src="image/slider3.jpg">
-                                <p>PLACE : Tower Bridge,England</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="example">
-                                <img src="image/slider4.jpg">
-                                <p>PLACE : Musee du Louvre,France</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="example">
-                                <img src="image/slider5.jpg">
-                                <p>PLACE : Arc de Triomphe,France</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="example">
-                                <img src="image/slider6.jpg">
-                                <p>PLACE : Disneyland Paris,France</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="example">
-                                <img src="image/slider7.jpg">
-                                <p>PLACE : Nice,France</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="example">
-                                <img src="image/slider8.jpg">
-                                <p>PLACE : Nice,France</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="example">
-                                <img src="image/slider9.jpg">
-                                <p>PLACE : Menton,France</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="example">
-                                <img src="image/slider10.jpg">
-                                <p>PLACE : Menton,France</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="top">
-                            <a href="#top">Back to top</a>
-                    </div>
-                    <hr/>
-                </div>
-            </div>
-        </div>
-        -->
     </section>
 
 </body>

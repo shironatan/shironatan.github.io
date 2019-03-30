@@ -60,23 +60,7 @@ AmCharts.makeChart("map",{
     }
 });
 $(function() {
-    $('.index_1').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-        if(isInView){
-            $(this).stop().addClass('index_example');
-        }
-        else{
-            $(this).stop().removeClass('index_example');
-        }
-    });
-    $('.index_2').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-        if(isInView){
-            $(this).stop().addClass('index_example');
-        }
-        else{
-            $(this).stop().removeClass('index_example');
-        }
-    });
-    $('.index_3').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+    $('.item').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
         if(isInView){
             $(this).stop().addClass('index_example');
         }
@@ -90,14 +74,6 @@ $(function() {
         }
         else{
             $(this).stop().removeClass('logo_show');
-        }
-    });
-    $('.main').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
-        if(isInView){
-            $(this).stop().addClass('main_show');
-        }
-        else{
-            $(this).stop().removeClass('main_show');
         }
     });
 });

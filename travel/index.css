@@ -1,32 +1,15 @@
-
+/*共通*/
+a{
+  text-decoration: none;
+}
 .wrap{
   overflow:auto;
 }
+
 hr{
-  background-color:#f5b2ac;
-}
-.t_right{
-  text-align: left;
-  background-color:rgba(255, 255, 255, 0.329);
-  padding:1%;
-  padding-top:5%;
-  margin-left:16%;
-  margin-right:1%;
-  color:#504946;
-  overflow:auto;
-}
-.main{
-  transition: .8s;
-  transform: translate(0,40px); 
-	-webkit-transform: translate(0,40px); 
-}
-.main_show{
-  transform: translate(0,0); 
-	-webkit-transform: translate(0,0);
-}
-.t_right a{
-  text-decoration: none;
-  color:#504946;
+  height: 1px;
+  background-color: #f5b2ac;
+  border: none;
 }
 h1 {
   position: relative;
@@ -63,21 +46,58 @@ h1:after {
   bottom:0;
   right: 0;
 }
+h2{
+  color:white;
+  width:100%;
+}
+.main{
+  transition: .8s;
+  transform: translate(0,40px); 
+  -webkit-transform: translate(0,40px); 
+  color:white;
+}
+.main_show{
+  transform: translate(0,0); 
+	-webkit-transform: translate(0,0);
+}
+.main a{
+  text-decoration: none;
+  color:#504946;
+}
+/**/
+/*right*/
+.t_right{
+  text-align: left;
+  padding-left:1%;
+  padding-right:1%;
+  padding-bottom:5%;
+  color:white;
+  overflow:auto;
+}
+.t_right a{
+  text-decoration: none;
+  color:#504946;
+}
 #contents_list{
   font-weight: bolder;
   padding:1%;
 }
 #contents_list a{
-  border-bottom: 1px dotted #504946;
+  color:white;
+  border-bottom: 1px dotted #f5b2ac;
 }
 #contents{
+  padding-left:2%;
+  padding-right:2%;
+  padding:3%;
   background-color:rgba(255, 255, 255, 0.329);
-  margin:1%;
-  padding:1%;
+  color:#504946;
+  border-bottom-right-radius: 50;
 }
 #content_icon{
-  background-color:#504946;
+  padding-top:5%;
   border-radius:5px;
+  background-color:#504946;
   padding:5px;
   color: white;
 }
@@ -88,10 +108,7 @@ h1:after {
 .cn_show{
   opacity: 1;
 }
-h2{
-  width:100%;
-  border-bottom:1px solid #504946;
-}
+
 .top{
   margin-left:20%;
   margin-right:20%;
@@ -99,9 +116,33 @@ h2{
 .top a{
   color:white;
 }
-.link a{
+#link a{
   border-bottom:1px solid #504946;
 }
+/*slider*/
+.example{
+  padding-left:10%;
+  padding-right:10%;
+  position:relative;
+  transition: .8s;
+  transform: scale(0, 0) rotateY(180deg);
+	-webkit-transform: scale(0, 0) rotateY(180deg);
+}
+.fadein_example{
+  transform: scale(1, 1) rotateY(360deg);
+	-webkit-transform: scale(1, 1) rotateY(360deg);
+}
+.example p{
+  margin-right:10%;
+  padding:1%;
+  font-size:120%;
+  position: absolute;
+  color:white;
+  bottom:0;
+  right: 0;
+  background-color:rgba(68, 68, 68, 0.6);
+}
+
 /*left*/
 .t_left{
   padding:1%;
@@ -151,40 +192,41 @@ h2{
 }
 
 /*index*/
+
 #map{
-  border: 1px solid #f5b2ac;
+  border:1px solid #f5b2ac;
+  margin-top:5%;
+  margin-bottom:5%;
   margin-right:20%;
   margin-left:20%;
   height: 50%;
 }
-.box:after {
-  content:" ";
-  clear: both;
-  display: block;
+.container {
+  margin-bottom:10%;
+  display: flex;
+  justify-content: space-around;
 }
-.index_1, .index_2, .index_3{
+.item{
+  width: 300px;
+  padding:5%;
   background-color:rgba(255, 255, 255, 0.329);
-  float: left;
-  border-color: rgba(187,255,228,1);
-  width: 30%;
-  margin:1%; 
+  border-color: #504946;
   padding:1%;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
   transition: .8s;
   transform: scale(0, 0) rotateY(180deg);
 	-webkit-transform: scale(0, 0) rotateY(180deg);
 }
-.index_1:hover,.index_2:hover,.index_3:hover{
+
+.item:hover{
   transform: translate(2px,4px); 
   -webkit-transform: translate(0,4px); 
-  border: 1px solid rgba(187,255,228,1);
+  border: 1px solid #504946;
 }
 .index_example{
   transform: scale(1, 1) rotateY(360deg);
 	-webkit-transform: scale(1, 1) rotateY(360deg);
 }
-/* index */
-
 
 
 @media (max-width: 800px){
@@ -200,6 +242,8 @@ h2{
     padding-bottom:10%;
   }
   .t_right{
+    padding-left:initial;
+    padding-right:initial;
     border:initial;
     margin-top:1%;
     margin-left:initial;
@@ -211,15 +255,19 @@ h2{
   #map{
     margin:initial;
   }
-  .box:after {
-    display: initial;
-  }
-  .index_1, .index_2, .index_3{
-    float: initial;
-    width: initial;
-    transform: initial;
-  }
   .top{
     margin:initial;
   }
+  .example{
+    padding:initial;
+  }
+  .example p{
+    margin-right:initial;
+    font-size:initial;
+  }
+  .container {
+    display: initial;
+  }
+  .item{
+    width: 100%;
 }
