@@ -6,18 +6,17 @@ html,body {
   background-color:#504946;
 }
 div {
-  box-sizing: border-box;
   color: white;
   width:100%;
 }
 .parallax-bg {
-  height:100%;
-  width:100%;
   background-image: url('image1.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  height:100%;
+  width:100%;
 }
 .parallax-bg2 {
   height:40%;
@@ -77,17 +76,7 @@ h1 {
 
 /*content*/
 .content{
-  display: initial;
-  height: 100%;
-  padding:5%;
-  width:100%;
   text-align: center;
-}
-.content_2{
-  display: initial;
-  height: 100%;
-  padding:5%;
-  width:100%;
 }
 .wrap{
   display: flex;
@@ -95,13 +84,11 @@ h1 {
   background-color: rgba(68, 68, 68, 0.493);
 }
 .wrap2{
-  display:initial;
-  height: 100%;
+  display:flex;
   padding-right:5%;
   padding-left:5%;
   padding-top:2%;
   padding-bottom:2%;
-  
 }
 
 
