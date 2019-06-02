@@ -3,7 +3,7 @@
 */
 /*個別*/
 html,body {
-  background-color:#504946;
+  background-color:#305f72;
 }
 div {
   color: white;
@@ -30,14 +30,10 @@ div {
 
 /*見出し*/
 h1 {
+  filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
   font-family: 'Vollkorn', serif;
   letter-spacing: -3px;
   color: white;
-  text-shadow: 
-  1px 1px #504946, -1px -1px #504946, 
-  1px -1px #504946, -1px 1px #504946, 
-  0px 1px #504946, 1px 0px #504946, 
-  -1px 0px #504946, 0px -1px #504946;
   font-size: 500%;
   font-weight: lighter;
   max-width:100%;
@@ -46,7 +42,6 @@ h1 {
 
 /*logo*/
 #top_logo{
-  display:initial;
   font-size:120%;
   margin:0 auto;
   margin-right:20%;
@@ -56,7 +51,7 @@ h1 {
 /* content_button */
 .ghost {
   display: inline-block;
-  width:30%;
+  width:20%;
   padding-top:15px;
   padding-bottom:15px;
   margin-left:5%;
@@ -69,7 +64,7 @@ h1 {
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.411));
 }
 .ghost:hover{
-  border:solid 3px white;
+  border: solid 1px white;
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.411));
   transition: .2s ease;
   top:1px;
@@ -86,6 +81,7 @@ h1 {
 }
 .wrap2{
   display:flex;
+  background-color: rgba(68, 68, 68, 0.493);
   padding-right:5%;
   padding-left:5%;
   padding-top:5%;

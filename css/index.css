@@ -115,7 +115,7 @@ p{
   font-weight: normal;
   font-style: normal;
 }
-.lsf, .lsf-:before {
+.lsf-icon, .lsf-icon:before {
 font-family: 'LigatureSymbols';
 -webkit-text-rendering: optimizeLegibility;
 -moz-text-rendering: optimizeLegibility;
@@ -132,20 +132,28 @@ text-rendering: optimizeLegibility;
 -o-font-feature-settings: "liga" 1, "dlig" 1;
 font-feature-settings: "liga" 1, "dlig" 1;
 }
-.lsf-:before {
+.lsf-icon:before {
 content:attr(title);
 margin-right:0.3em;
 font-size:130%;
 }
-.lsf-.hatena:before{
+.lsf-icon.hatena:before{
 content:'\E161';
 }
 #icon{
-padding-right:2px;
 color: #f1d1b5;
+margin-right:10px;
 }
 #icon:hover{
 color: #f1d1b5;
+}
+#sns_icon{
+  text-decoration: none;
+  font-size:30px;
+  color: #f1d1b5;
+}
+#sns_icon:hover{
+  color: #f1d1b5;
 }
 /*link*/
 .link{
@@ -160,3 +168,4 @@ color: #f1d1b5;
   color:white;
   transition: .2s ease;
 }
+
