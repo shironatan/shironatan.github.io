@@ -12,6 +12,7 @@ div {
 }
 .parallax-bg {
   height:100%;
+  width:100%;
   background-image: url('image1.jpg');
   background-attachment: fixed;
   background-position: center;
@@ -20,6 +21,7 @@ div {
 }
 .parallax-bg2 {
   height:40%;
+  width:100%;
   background-image: url('image2.jpg');
   background-attachment: fixed;
   background-position: center;
