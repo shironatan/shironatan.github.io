@@ -19,9 +19,14 @@ html,body {
 }
 a{
   text-decoration: none;
+  font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  Font-size:120%;
+  font-weight: 400;
+  letter-spacing: -1px;
   color:white;
 }
 p{
+  Font-size:120%;
   font-weight: 400;
   letter-spacing: -1px;
   font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -30,6 +35,7 @@ p{
 .content1{
   transition: 3s;
   opacity: 0;
+  color:white;
 }
 .fadein_content1{
   opacity: 1.0;
@@ -141,19 +147,19 @@ font-size:130%;
 content:'\E161';
 }
 #icon{
-color: #f1d1b5;
+color: #555555;
 margin-right:10px;
 }
 #icon:hover{
-color: #f1d1b5;
+color: #555555;
 }
 #sns_icon{
   text-decoration: none;
-  font-size:30px;
-  color: #f1d1b5;
+  font-size:50px;
+  color: #555555;
 }
 #sns_icon:hover{
-  color: #f1d1b5;
+  color: #555555;
 }
 /*link*/
 .link{
