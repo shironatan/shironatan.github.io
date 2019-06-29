@@ -191,6 +191,20 @@ h2{
   [class^="content-flex"] {
     display:initial;
   }
+  [class^="img-flex"] {
+    display:initial;
+  }
+  .img-flex > img{
+    overflow: initial;
+    max-width : 80%;
+    margin-bottom:1%;
+  }
+  #img_icon1{
+    transform:initial;
+  }
+  #img_icon2{
+    transform:initial;
+  }
   .content-flex > p { 
     overflow: initial;
     max-width: 100%;
