@@ -13,6 +13,7 @@ html,body {
 	max-height:100%;
   margin: 0 auto;
   scroll-behavior: smooth;
+  background-color:#555555;
 }
 #body_wrap{
   overflow: hidden;
