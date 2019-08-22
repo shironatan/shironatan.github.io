@@ -1,11 +1,11 @@
 
 .parallax-bg {
+  max-width:100%;
   background-image: url('image1.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width:100%;
 }
 .parallax-bg2 {
   height:40%;
