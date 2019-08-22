@@ -7,13 +7,13 @@
 html,body {
   margin: 0;
   padding: 0;
-  font-family: 'Verdana';
+  font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: 400;
 	max-width: 100%;
 	max-height:100%;
   margin: 0 auto;
   scroll-behavior: smooth;
-  background-color:#555555;
+  background-color:#F4DCDC;
 }
 #body_wrap{
   overflow: hidden;
@@ -21,95 +21,44 @@ html,body {
 a{
   text-decoration: none;
   font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  Font-size:120%;
-  font-weight: 400;
-  letter-spacing: -1px;
   color:white;
 }
 p{
-  Font-size:120%;
-  font-weight: 400;
-  letter-spacing: -1px;
+  font-size:105%;
+  letter-spacing: 1px;
   font-family: Quicksand, 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
-/*fadein*/
+/*content*/
 .content1{
   transition: 3s;
   opacity: 0;
-  color:white;
+  text-align: left;
+  margin:5%;
+  margin-right:20%;
+  margin-left:20%;
 }
 .fadein_content1{
   opacity: 1.0;
 }
-.content2{
-  transition: 2s;
-  opacity: 0;
-  transform: translate(0,80px); 
-  -webkit-transform: translate(0,80px); 
-}
-.fadein_content2{
-  opacity:1;
-  transform: translate(0,0); 
-	-webkit-transform: translate(0,0);
-}
-/*topbutton*/
-.top{
-  text-align: center;
-  padding-right:1%;
-  padding-bottom:1%;
-  font-size:130%;
-}
-.top a{
-  text-decoration: none;
+.content_1{
   color:white;
-  text-shadow: 
-  1px 1px #504946, -1px -1px #504946, 
-  1px -1px #504946, -1px 1px #504946, 
-  0px 1px #504946, 1px 0px #504946, 
-  -1px 0px #504946, 0px -1px #504946;
+  padding:5%;;
 }
-#page_top{
-  width: 90px;
-  height: 90px;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  opacity: 0.6;
+.content_2{
+  color:white;
+  width:70%;
+  margin-left:20%;
 }
-#page_top a{
-  position: relative;
-  display: block;
-  width: 90px;
-  height: 90px;
-  text-decoration: none;
+h2{
+  width:100%;
+  background-color:#504946;
+  padding:2px;
+  margin-top:10%;
+  margin-bottom:10%;
+  text-align:center;
+  letter-spacing: 3px;
 }
-#page_top a::before{
-  font-family: FontAwesome;
-  content: '\f102';
-  font-size: 25px;
-  color: white;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: -40px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  text-align: center;
-}
-#page_top a::after{
-  content: 'PAGE TOP';
-  font-size: 13px;
-  color: white;
-  position: absolute;
-  top: 45px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  text-align: center;
-}
+
 /*icon*/
 @font-face {
   font-family: 'LigatureSymbols';
@@ -142,25 +91,24 @@ font-feature-settings: "liga" 1, "dlig" 1;
 .lsf-icon:before {
 content:attr(title);
 margin-right:0.3em;
-font-size:130%;
 }
 .lsf-icon.hatena:before{
 content:'\E161';
 }
 #icon{
-color: #555555;
+color: #F4DCDC;
 margin-right:10px;
 }
 #icon:hover{
-color: #555555;
+color: #F4DCDC;
 }
 #sns_icon{
   text-decoration: none;
   font-size:50px;
-  color: #555555;
+  color: #F4DCDC;
 }
 #sns_icon:hover{
-  color: #555555;
+  color: #F4DCDC;
 }
 /*link*/
 .link{
@@ -176,3 +124,34 @@ color: #555555;
   transition: .2s ease;
 }
 
+@media (max-width: 700px){
+  .content1{
+    margin-right:initial;
+    margin-left:initial;
+  }
+  .content_1{
+    padding:5%;
+  }
+  .content_2{
+    width:100%;
+    padding:5%;
+    margin-left:initial;
+  }
+  [class^="content-flex"] {
+    display:initial;
+  }
+  .flex_1{ 
+    text-align: center;
+    overflow: initial;
+    max-width: 100%;
+  }
+  #image4{
+    max-width:50%;
+    margin:5%;
+  }
+  .flex_2 { 
+    padding:initial;
+    overflow: initial;
+    width: 100%;
+  }
+}

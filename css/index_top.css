@@ -1,17 +1,10 @@
-/*
-トップページ用
-*/
-/*個別*/
-div {
-  width:100%;
-}
+
 .parallax-bg {
   background-image: url('image1.jpg');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height:100%;
   width:100%;
 }
 .parallax-bg2 {
@@ -23,133 +16,16 @@ div {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.scrollbox{
-  background-color:#F4DCDC;
-  color:#555555;
-}
-.scrollbox2{
-  background-color:#555555;
-  color:white;
-}
-
-/*見出し*/
-h1 {
-  font-family: 'Vollkorn', serif;
-  letter-spacing: 2px;
-  color: white;
-  font-size: 600%;
-  font-weight: lighter;
-  max-width:100%;
-}
-
-
-/*logo*/
-#top_logo{
-  font-size:120%;
-  margin:0 auto;
-  margin-right:20%;
-  margin-left:20%;
-  padding:2%;
-  color:white;
-}
-/* content_button */
-.ghost {
-  display: inline-block;
-  width:25%;
-  padding-top:15px;
-  padding-bottom:15px;
-  margin-left:5%;
-  margin-right:5%;
-  letter-spacing : 1px;
-  background-color: transparent;
-  transition: .2s ease;
-}
-.ghost:hover{
-  transition: .2s ease;
-  top:1px;
-}
-.ghost_color1{
-  color:white;
-  border: dashed 1px white;
-}
-.ghost_color1:hover{
-  border: solid 1px white;
-}
-.ghost_color2{
-  color:#555555;
-  border: dashed 1px #555555;
-}
-.ghost_color2:hover{
-  border: solid 1px #555555;
-}
-
-/*content*/
-.content{
-  text-align: center;
-  margin-top:5%;
-  margin-bottom:10%;
-}
 .wrap{
   display: flex;
-  height:100%;
-  background-color: rgba(68, 68, 68, 0.671);
+  background-color: rgba(68, 68, 68, 0.562);
 }
 .wrap2{
-  display:flex;
-  padding-right:5%;
-  padding-left:5%;
-  padding-top:5%;
-  padding-bottom:10%;
-}
-h2{
-  font-family: 'Vollkorn', serif;
-  letter-spacing: 2px;
-  font-size:200%;
-}
-.scrollbox h2{
-  color:#555555;
-}
-.scrollbox2 h2{
-  color:#F4DCDC;
-}
-/*content2*/
-[class^="img-flex"] {
-  display:-webkit-box;
-  display:-moz-box;
-  display:-ms-flexbox;
-  display:-webkit-flex;
-  display:-moz-flex;
-  display:flex;
-  -webkit-box-pack:start;
-  -moz-box-pack:start;
-  -webkit-flex-pack:start;
-  -moz-flex-pack:start;
-  -ms-flex-pack:start;
-  -webkit-justify-content:center;
-  -moz-justify-content:center;
-  justify-content:center;
+  display: flex;
+  height:100%;
+  background-color: rgba(68, 68, 68, 0.562);
 }
 
-.img-flex > img,
-.img-flex a { 
-  overflow: hidden;
-  max-width: 20%;
-  max-height: 20%; 
-  margin-right:5%;
-  margin-left:5%;
-}
-.scrollbox img{
-  border:3px solid #555555;
-}
-.scrollbox2 img{
-  border:3px solid #F4DCDC;
-}
-#img_icon1{
-  transform:rotate(-5deg);
-}
-#img_icon2{
-  transform:rotate(5deg);
-}
 /*content3*/
 [class^="content-flex"] {
   display:-webkit-box;
@@ -163,59 +39,20 @@ h2{
   -webkit-flex-pack:start;
   -moz-flex-pack:start;
   -ms-flex-pack:start;
-  -webkit-justify-content:center;
-  -moz-justify-content:center;
-  justify-content:center;
 }
-
-.content-flex > p { 
+.flex_1{
   overflow: hidden;
   text-align: left;
-  max-width: 45%;
-  padding:1%;
+  max-width: 25%;
+}
+.flex_2{
+  overflow: hidden;
+  text-align: left;
+  max-width: 100%;
+  padding-left:10%;
 }
 #image4{
+  border-radius: 50em;
+  border:7px solid #F4DCDC;
   max-width:100%;
-}
-@media (min-width:600px){
-  .img-flex > img,
-  .img-flex a {
-    max-width:10%;
-    max-height:10%;
-  }
-}
-@media (max-width: 700px){
-  [class^="content-flex"] {
-    display:initial;
-  }
-  [class^="img-flex"] {
-    display:initial;
-  }
-  .img-flex > img{
-    overflow: initial;
-    max-width : 80%;
-    margin-bottom:1%;
-  }
-  #img_icon1{
-    transform:initial;
-  }
-  #img_icon2{
-    transform:initial;
-  }
-  .content-flex > p { 
-    overflow: initial;
-    max-width: 100%;
-  }
-  h1{
-    font-size: 400%;
-  }
-  .content{
-    margin-top:30%;
-  }
-  .ghost {
-    width:50%;
-    margin-left:25%;
-    margin-right:25%;
-    margin-top:15px;  
-  }
 }
