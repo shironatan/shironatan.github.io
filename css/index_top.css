@@ -1,58 +1,17 @@
 
-.parallax-bg {
-  max-width:100%;
+#parallax-bg {
+  height:500px;
   background-image: url('image1.jpg');
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.parallax-bg2 {
-  height:40%;
-  width:100%;
-  background-image: url('image2.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.wrap{
-  display: flex;
-  background-color: rgba(68, 68, 68, 0.562);
-}
-.wrap2{
-  display: flex;
-  height:100%;
-  background-color: rgba(68, 68, 68, 0.562);
-}
-
-/*content3*/
-[class^="content-flex"] {
-  display:-webkit-box;
-  display:-moz-box;
-  display:-ms-flexbox;
-  display:-webkit-flex;
-  display:-moz-flex;
-  display:flex;
-  -webkit-box-pack:start;
-  -moz-box-pack:start;
-  -webkit-flex-pack:start;
-  -moz-flex-pack:start;
-  -ms-flex-pack:start;
-}
-.flex_1{
-  overflow: hidden;
-  text-align: left;
-  max-width: 25%;
-}
-.flex_2{
-  overflow: hidden;
-  text-align: left;
-  max-width: 100%;
-  padding-left:10%;
+#wrap{
+  padding-top:100px;
+  background-color: rgba(68, 68, 68, 0.397);
+  height: 100%;
+  color:#f6f6f6;
 }
 #image4{
-  border-radius: 50em;
-  border:7px solid #F4DCDC;
-  max-width:100%;
+  max-width:50%;
 }
