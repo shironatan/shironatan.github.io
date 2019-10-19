@@ -5,22 +5,21 @@
   box-sizing: border-box;
 }
 html,body {
-  margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  font-weight: 300;
 	max-width: 100%;
-	max-height:100%;
+  max-height:100%;
   margin: 0 auto;
   scroll-behavior: smooth;
-  background-image:url('image1.JPG');
-  background-position: center center;
+  background-image:url('image1.png');
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
+  width:100%;
 }
 #profile{
+  width:100%;
   text-align:center;
   padding:0% 5% 0% 5%;
 }
@@ -45,32 +44,13 @@ html,body {
   animation-iteration-count: infinite;
 }
 
-/*flex*/
-#flex{
-  height:250px;
-  display:flex;
-  justify-content: left;
-  align-items: center;
-}
-.item{
-  width:calc(100%/2);
-}
-
-#rotate_content{
-  animation-name: fadeIn;
-  animation-duration:5s;
-  animation-fill-mode: forwards;
-  font-size:200%;
-  font-weight:bold;
-  color:#82c0cd;
-}
 a{
   text-decoration: none;
   font-family: sans-serif;
   color:#555555;
 }
 p{
-  font-size:105%;
+  width: 100%;
   font-family: sans-serif;
 }
 img{
@@ -164,13 +144,11 @@ color: #555555;
   transition: .2s ease;
 }
 
-@media (max-width: 700px){
+@media (max-width: 1000px){
   #profile{
-    padding:0% 0% 0% 0%;
-    width:100%;
+    padding:initial;
   }
   #content{
     margin:initial;
-    width:100%;
   }
 }
