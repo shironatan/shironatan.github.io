@@ -10,7 +10,6 @@ html,body {
   max-height:100%;
   margin: 0 auto;
   scroll-behavior: smooth;
-  background-image:url('image1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
