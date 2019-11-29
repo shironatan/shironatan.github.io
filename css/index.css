@@ -9,148 +9,79 @@ html,body {
 	max-width: 100%;
   max-height:100%;
   margin: 0 auto;
-  scroll-behavior: smooth;
-  background-position: center;
+  width:100%;
+  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  background-image: url("image.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
+}
+#wrap{
+  background-color:rgba(0, 0, 0, 0.603);
   width:100%;
+  padding-bottom:10%;
 }
-#profile{
-  width:100%;
-  text-align:center;
-  padding:0% 5% 0% 5%;
-}
-#content{
-  margin:0% 5% 0% 5%;
-  padding:3%;
-  background-color:rgb(255, 255, 255);
-  color:#555555;
-  text-align:center;
-  border:5px solid #e2b2c0;
-  border-radius: 3em;
-
-}
-#star_content{
-  text-align:right;
-}
-#star_content2{
-  text-align:left
-}
-#star{
-  font-size:200%;
-  color: #e2b2c0;
-  animation-name: star;
-  animation-duration:5s;
-  animation-iteration-count: infinite;
-}
-
-a{
-  text-decoration: none;
-  font-family: sans-serif;
-  color:#555555;
-}
-p{
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+nav{
   width: 100%;
-  font-family: sans-serif;
+  height: 90px;
+  background-color:#716e77;
+  font-family: 'Sacramento', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:180%;
+  box-shadow: 0 2px 6px;
+  padding:10px;
 }
-img{
-  max-width: 100%;
+.nav-item{
+  color:white;
 }
-#head-img{
-  height:250px;
-  text-align: left;
+main{
+  color:white;
+  margin: 0% 20% 0% 20%;
 }
-#footer{
-  text-align:right;
+#about_flex{
+  display: flex;
+  align-items: center;
 }
-#footer-img{
-  height:250px;
-  animation-name: rotate2;
-  animation-duration:3s;
-  animation-fill-mode: forwards;
+h3{
+  font-family: 'Sacramento', cursive;
+  font-size:180%;
+  margin:10% 0% 5% 0%;
+  border-bottom:1px solid #D87575;
+}
+a{
+  text-decoration: initial;
+  color:white;
+}
+#about,#Likes,#Skills,#Experience,#Links{
+  animation-name:fadeIn;
+  animation-duration: 3s;
 }
 
-/*animation*/
-@keyframes star{
+/* icon */
+.fa-heart{
+  color:#D87575;
+}
+
+
+@keyframes fadeIn {
   from{
+      opacity:0;
   }
-  to{
-    transform: rotate(-360deg);
+  to {
+      opacity:1;
   }
 }
 
-/*icon*/
-@font-face {
-  font-family: 'LigatureSymbols';
-  src: url('../fonts/LigatureSymbols-2.11.eot');
-  src: url('../fonts/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/LigatureSymbols-2.11.woff') format('woff'),
-       url('../fonts/LigatureSymbols-2.11.ttf') format('truetype'),
-       url('../fonts/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
-  src: url('../fonts/LigatureSymbols-2.11.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-.lsf-icon, .lsf-icon:before {
-font-family: 'LigatureSymbols';
--webkit-text-rendering: optimizeLegibility;
--moz-text-rendering: optimizeLegibility;
--ms-text-rendering: optimizeLegibility;
--o-text-rendering: optimizeLegibility;
-text-rendering: optimizeLegibility;
--webkit-font-smoothing: antialiased;
--moz-font-smoothing: antialiased;
--ms-font-smoothing: antialiased;
--o-font-smoothing: antialiased;
--webkit-font-feature-settings: "liga" 1, "dlig" 1;
--moz-font-feature-settings: "liga=1, dlig=1";
--ms-font-feature-settings: "liga" 1, "dlig" 1;
--o-font-feature-settings: "liga" 1, "dlig" 1;
-font-feature-settings: "liga" 1, "dlig" 1;
-}
-.lsf-icon:before {
-content:attr(title);
-margin-right:0.3em;
-}
-.lsf-icon.hatena:before{
-content:'\E161';
-}
-#icon{
-color: #555555;
-margin-right:10px;
-}
-#icon:hover{
-color: #555555;
-}
-#sns_icon{
-  text-decoration: none;
-  font-size:50px;
-  color: #555555;
-}
-#sns_icon:hover{
-  color: #555555;
-}
-/*link*/
-.link{
-  font-size:initial;
-  color: initial;
-  text-shadow: initial;
-  text-decoration: none;
-  color:white;
-}
-.link:hover{
-  text-decoration: none;
-  color:white;
-  transition: .2s ease;
-}
-
-@media (max-width: 1000px){
-  #profile{
-    padding:initial;
+@media screen and (max-width:780px){
+  main{
+    margin:1%;
   }
-  #content{
-    margin:initial;
+  #about_flex{
+    display: initial;
   }
 }
