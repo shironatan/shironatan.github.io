@@ -1,6 +1,4 @@
-/*
-共通
-*/
+/*　全体 */
 * {
   box-sizing: border-box;
 }
@@ -10,78 +8,229 @@ html,body {
   max-height:100%;
   margin: 0 auto;
   width:100%;
-  font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
-  background-image: url("image.jpg");
+  background-image: url("image3.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-color: #464646;
 }
-#wrap{
-  background-color:rgba(0, 0, 0, 0.603);
-  width:100%;
-  padding-bottom:10%;
-}
-@import url('https://fonts.googleapis.com/css?family=Sacramento');
-nav{
+
+/*　ローディング中 */
+#is-loading {
+  display: block;
+  position: fixed;
   width: 100%;
-  height: 90px;
-  background-color:#716e77;
-  font-family: 'Sacramento', cursive;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: white;
+  z-index: 8;
+ }
+#loading {
+  display: none;
+  position: absolute;
+  width:100%;
+  height: 100%;
+  top: 30%;
+  text-align: center;
+  z-index: 9;
+}
+#loading img{
+  width: 700px;
+  height: 300px;
+}
+
+/* ローディング後 */
+#loading__wrapper{
+  display:none;
+  text-align: center;
+  color:white;
+  width:100%;
+}
+
+/* ヘッダー */
+#header{
+  padding: 0;
+	max-width: 100%;
+  max-height:60%;
+  margin: 0 auto;
+  width:100%;
+  height: 60%;
+  background-image: url("image2.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+  animation: fade 10s ease -2s infinite alternate;
+}
+.header_text{
+  position: relative;
+  top:50%;
+  width:100%;
+  font: bold 250% Consolas, Monaco, monospace;
+}
+@keyframes fade{
+  0%{
+    color:white;
+    text-shadow:1px 1px 0 #D87575,-1px 1px 0 #D87575,1px -1px 0 ≈,-1px -1px 0 #D87575;
+  }
+  100%{
+    color:#D87575;
+    text-shadow:5px 1px 0 #fff,-1px 1px 0 #fff,1px -1px 0 #fff,-1px -1px 0 #fff;
+  }
+}
+
+/* メイン */
+#content{
+  z-index:5;
+  padding:100px 100px 0px 100px;
+  font:  110% Consolas, Monaco, monospace;
+  text-align: left;
+}
+
+/* flex1 */
+.flex{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size:180%;
-  box-shadow: 0 2px 6px;
+  display: -webkit-flex;
+  max-width:100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.flex_content{
+  flex:1;
+}
+#flex_img{
+  height: 300px;
+  width:300px;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.493);
+}
+#profile{
+  color:white;
   padding:10px;
+  margin:auto;
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.493);
 }
-.nav-item{
-  color:white;
-}
-main{
-  color:white;
-  margin: 0% 20% 0% 20%;
-}
-#about_flex{
+
+/* flex2 */
+.contents{
   display: flex;
-  align-items: center;
+  display: -webkit-flex;
+  min-width:100%;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding:100px 100px 100px 100px;
 }
-h3{
-  font-family: 'Sacramento', cursive;
-  font-size:180%;
-  margin:10% 0% 5% 0%;
-  border-bottom:1px solid #D87575;
+.contents_list{
+  flex:1;
+  color:#D87575;
+  font-size:60px;
+  padding:10px;
 }
 a{
   text-decoration: initial;
-  color:white;
-}
-#about,#Likes,#Skills,#Experience,#Links{
-  animation-name:fadeIn;
-  animation-duration: 3s;
-}
-
-/* icon */
-.fa-heart{
   color:#D87575;
+  text-shadow: 5px 3px  #ffffff;
+  transition-duration: 1s;
+}
+a:hover{
+  text-shadow: initial;
 }
 
-
-@keyframes fadeIn {
-  from{
-      opacity:0;
+/* bubbles */
+.bubbles {
+  position: absolute;
+  z-index:2;
+  width: 100%;
+  min-height: 100%; 
+  z-index: 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+.bubble{
+  position: absolute;
+  bottom: -40;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 50%;
+  animation: bubble 10s ease-in infinite;
+}
+.bubble:nth-child(1) {
+  width: 20px;
+  height: 20px;
+  left: 30%;
+  animation-duration: 6s;
+}
+.bubble:nth-child(2) {
+  left: 20%;
+  animation-duration: 3.5s;
+}
+.bubble:nth-child(3) {
+  width: 30px;
+  height: 30px;
+  left: 30%;
+  animation-duration: 7s;
+}
+.bubble:nth-child(4) {
+  width: 50px;
+  height: 50px;
+  left: 67%;
+  animation-duration: 6s;
+}
+.bubble:nth-child(5) {
+  width: 20px;
+  height: 20px;
+  left: 70%;
+  animation-duration: 4.5s;
+}
+@keyframes bubble {
+  0% {
+    bottom: -100px;
+    transform: translateX(0);
   }
-  to {
-      opacity:1;
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+   bottom: 1000px;
   }
 }
 
-@media screen and (max-width:780px){
-  main{
-    margin:1%;
+/* footer */
+#footer{
+  margin:10px;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width:700px){
+  #loading img{
+    max-width: 100%;
   }
-  #about_flex{
+  #content{
+    padding:100px 3px 0px 3px;
+    width: 100%;
+  }
+  .flex{
     display: initial;
+  }
+  #flex_img{
+    max-width: 100%;
+  }
+  #profile{
+    max-width: 100%;
+    padding:initial;
+  }
+  .contents{
+    max-width:100%;
+    padding-left:initial;
+    padding-right:initial;
+  }
+  .contents_list{
+    padding-left:initial;
+    padding-right:initial;
   }
 }

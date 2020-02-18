@@ -2,6 +2,10 @@
 <head>
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
+    <!-- js -->
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- font -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,67 +14,65 @@
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!-- -->
     <meta charset="UTF-8">
-    <title>467site</title>
+    <title>467</title>
     <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
-    <div id="wrap">
-        <nav>
-            <div class="nav-item">
-                <p>Port folio</p>
-            </div>
-        </nav>
-        <main>
-            <div id="about">
-                <h3>about</h3>
-                <div id="about_flex">
-                    <div class="about_item">
-                        <img src="usa.png" height="100px">
-                    </div>
-                    <div class="about_item">
-                        <p>情報専攻にしている学生。何もできません。４６７/Shirona/白菜などと呼ばれています。仲良くしてください。</p>
-                    </div>
+    <div id="is-loading">
+        <div id="loading">
+            <img src="loading.gif" alt="loadingなう" />
+        </div>
+   </div>
+   <div id="loading__wrapper">
+        <div id="header">
+            <p class="animated delay-4s bounceInDown header_text ">- HELLO WORLD -</p>
+        </div>
+        <div id="content">
+            <div class="flex">
+                <div class="flex_content">
+                    <img src="image.png" alt="profile" id="flex_img">
+                </div>
+                <div class="flex_content" id="profile" style="text-align: left;"> 
+                    <p>静岡の東部育ちで2020年春から上京．何もできない．<br>主にデータベース処理基盤に興味があります．
+                    他に趣味でWeb，インフラなどの開発にも触れています．python,Java,spark,hadoop,mysql,Cyph<br>er,SQL,RDB,GraphDBあたりがちょっとできる．
+                    AP/SC/DB/NWを持ってる．seccamp'18,CBss'18'19に参加．<br>
+                    バリ島，イギリス，フランス，オーストラリアに上陸したことあるけどイギリスがいちばん好き．進撃の巨人とりぶさんと綺麗な写真撮ったりするのも好き．
+                    <br>イギリス産のうさぎ(1998-)の完全趣味用サイト．<br>
+                    </p>
                 </div>
             </div>
-            <div id="likes">
-                <h3>Likes</h3>
-                <p><i class="far fa-heart"></i>　Database全般</p>
-                <p>RDB(mysql,postgreSQL) GraphDB(neo4j) spark Hadoop </p>
-                <p><i class="far fa-heart"></i>　そのほか</p>
-                <p>進撃の巨人/旅行(イギリス)/りぶ　など、わりとなんでも好き</p>
-            </div>
-            <div id="Skills">
-                <h3>Skills</h3>
-                <p><i class="far fa-heart"></i>　Programing</p>
-                <p>Java Python3 scala html cssかいていきたい</p>
-                <p>Query(SQL,Cypher) WebFramework(Servlet,Django) docker もちょっとできる</p>
-                <p><i class="far fa-heart"></i>　資格</p>
-                <p>応用情報技術者試験　取得</p>
-                <p>高度情報技術者試験（NW/DB/SC）　取得</p>
+            <br>
+            <div class="contents">
+                <div class="contents_list">
+                    <a href="https://twitter.com/srn221B" class="icon"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="contents_list">
+                    <a href="https://github.com/srn221B" class="icon"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="contents_list">
+                    <a href="https://filmarks.com/users/467" class="icon"><i class="fas fa-video icon"></i></a>
+                </div>
+                <div class="contents_list">
+                    <a href="http://467.hatenablog.com/" class="icon"><i class="fas fa-blog icon"></i></a>
+                </div>
+                <div class="contents_list">
+                    <a href="http://animetick.net/users/srn221B" class="icon"><i class="fas fa-check icon"></i></a>
+                </div>
 
             </div>
-            <div id="Experience">
-                <h3>Experience</h3>
-                <p>セキュリティキャンプ全国大会 '18</p>
-                <p>CODEBLUE 学生スタッフ '18'19</p>
-            </div>
-            <div id="Links">
-                <h3>Links</h3>
-                <p><a href="https://twitter.com/srn221B"><i class="far fa-heart"></i>　Twitter</a>
-                <br>Follow me!</p>
-                <p><a href="http://animetick.net/users/srn221B"><i class="far fa-heart"></i>　Animetick</a></p>
-                <p><a href="https://filmarks.com/users/467"><i class="far fa-heart"></i>　Filmarks</a></p>
-                <p><a href="https://github.com/shironatan"><i class="far fa-heart"></i>　Github</a>
-                <br>進捗していきたい</p>
-                <p><a href="http://467.hatenablog.com/"><i class="far fa-heart"></i>　Blog</a>
-                    <br>のんびりかいてます</p>
-            </div>
-
-        </main>
-    </div>
-
-    </body>
+        </div>
+        <div class="bubbles">
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+            <div class="bubble"></div>
+        </div>
+        <div id="footer">
+            <p>© 2020 srn221B</p>
+        </div>
+   </div>
 </body>
 
 </html>
