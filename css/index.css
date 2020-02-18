@@ -15,7 +15,6 @@ html,body {
   background-size: cover;
   background-color: #464646;
 }
-
 /*　ローディング中 */
 #is-loading {
   display: block;
