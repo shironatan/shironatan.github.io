@@ -5,7 +5,6 @@
 html,body {
   padding: 0;
 	max-width: 100%;
-  max-height:100%;
   margin: 0 auto;
   width:100%;
   background-image: url("https://shironatan.github.io/css/image3.jpg");
@@ -112,20 +111,19 @@ html,body {
 }
 
 /* flex2 */
+#icon{
+  padding:100px 0px 100px 0px;
+}
 .contents{
-  display: flex;
-  display: -webkit-flex;
   min-width:100%;
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding:100px 100px 100px 100px;
 }
 .contents_list{
-  flex:1;
   color:#D87575;
-  font-size:60px;
-  padding:10px;
+  font-size:50px;
+  padding:3px;
 }
 a{
   text-decoration: initial;
@@ -215,6 +213,7 @@ a:hover{
   }
   .flex{
     display: initial;
+    width:100%;
   }
   #flex_img{
     max-width: 100%;
@@ -229,7 +228,6 @@ a:hover{
     padding-right:initial;
   }
   .contents_list{
-    font-size:50px;
     padding-left:initial;
     padding-right:initial;
   }
