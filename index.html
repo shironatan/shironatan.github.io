@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="https://shironatan.github.io/css/index.css">
     <!-- js -->
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="https://shironatan.github.io/js/index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- font -->
     <meta charset="UTF-8">
@@ -73,6 +72,18 @@
             <p>© 2020 srn221B</p>
         </div>
    </div>
+   <script type="text/javascript">
+   $(function() {
+       var h = $(window).height(); 
+       $('#loading__wrapper').css('display','none'); 
+       $('#is-loading ,#loading').height(h).css('display','block');
+    });
+    $(window).on('load', function () { 
+        $('#is-loading').delay(3000).fadeOut(3000);
+        $('#loading').delay(2000).fadeOut(2000);
+        $('#loading__wrapper').css('display', 'block');
+    });
+    </script>
 </body>
 
 </html>
