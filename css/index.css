@@ -203,10 +203,6 @@ a:hover{
   }
 }
 
-/* footer */
-#footer{
-  margin:10px;
-}
 
 /* レスポンシブ対応 */
 @media screen and (max-width:900px){
