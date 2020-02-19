@@ -8,7 +8,7 @@ html,body {
   max-height:100%;
   margin: 0 auto;
   width:100%;
-  background-image: url("image3.jpg");
+  background-image: url("https://shironatan.github.io/css/image3.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -56,7 +56,7 @@ html,body {
   margin: 0 auto;
   width:100%;
   height: 60%;
-  background-image: url("image2.png");
+  background-image: url("https://shironatan.github.io/css/image2.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
