@@ -7,7 +7,7 @@ html,body {
 	max-width: 100%;
   margin: 0 auto;
   width:100%;
-  height: 100%;
+  
   background-image: url("https://shironatan.github.io/css/image3.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -50,12 +50,11 @@ html,body {
 
 /* ヘッダー */
 #header{
-  padding: 0;
+  position: absolute;
+  top:0;
 	max-width: 100%;
-  max-height:60%;
-  margin: 0 auto;
   width:100%;
-  height: 60%;
+  height: 400px;
   background-image: url("https://shironatan.github.io/css/image2.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -65,7 +64,7 @@ html,body {
 }
 .header_text{
   position: relative;
-  top:50%;
+  top:30%;
   width:100%;
   font: bold 250% Consolas, Monaco, monospace;
 }
@@ -82,6 +81,7 @@ html,body {
 
 /* メイン */
 #content{
+  margin-top:400px;
   z-index:5;
   padding:100px 100px 0px 100px;
   font:  110% Consolas, Monaco, monospace;
